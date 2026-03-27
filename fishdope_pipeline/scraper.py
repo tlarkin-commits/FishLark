@@ -21,7 +21,7 @@ from bs4 import BeautifulSoup
 from tqdm import tqdm
 
 from config import (
-    FISHDOPE_SESSION_COOKIE_NAME, FISHDOPE_SESSION_COOKIE_VALUE,
+    FISHDOPE_COOKIES,
     BASE_URL, LISTING_PAGE_URL, TOTAL_PAGES,
     SCRAPE_DELAY_SECONDS, MAX_RETRIES, RETRY_DELAY_SECONDS,
     REQUEST_TIMEOUT, RAW_HTML_DIR, RAW_TEXT_DIR,
@@ -38,11 +38,8 @@ logger = logging.getLogger(__name__)
 class FishdopeScraper:
     def __init__(self):
         self.session = requests.Session()
-        self.session.cookies.set(
-            FISHDOPE_SESSION_COOKIE_NAME,
-            FISHDOPE_SESSION_COOKIE_VALUE,
-            domain=".fishdope.com",
-        )
+        for name, value in FISHDOPE_COOKIES.items():
+            self.session.cookies.set(name, value, domain=".fishdope.com")
         self.session.headers.update({
             "User-Agent": (
                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -131,9 +128,9 @@ class FishdopeScraper:
         return reports
 
     def _parse_date_from_title(self, title: str) -> str:
-        clean = re.sub(r"(\\d+)(st|nd|rd|th)", r"\\1", title)
+        clean = re.sub(r"(\d+)(st|nd|rd|th)", r"\1", title)
         clean = re.sub(
-            r"^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)[,\\s]*",
+            r"^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)[,\s]*",
             "", clean
         )
         for fmt in ["%B %d, %Y", "%B, %d %Y", "%B %d %Y", "%b %d, %Y"]:

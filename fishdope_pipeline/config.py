@@ -3,11 +3,20 @@ FishLark / Fishdope Pipeline Configuration
 """
 
 # -- Authentication --
-# Export your WordPress session cookie from your browser.
-# Chrome: DevTools > Application > Cookies > fishdope.com
-# Copy the value of "wordpress_logged_in_5e44dbdfb5841b744db4ddd7da2ac21c"
+# All cookies required for aMember + WordPress auth on fishdope.com
+# Refresh from Chrome DevTools > Application > Cookies > fishdope.com when expired
+FISHDOPE_COOKIES = {
+    "amember_nr": "0c94ecc5bd7ed46c38d1ac0a8d4e2fc9",
+    "amember_rp": "39eff73c31eb24e849866eee041c8806638db653",
+    "amember_ru": "tlarkin3",
+    "PHPSESSID": "0aef0d36022f22717f34f3eb4e699e0e",
+    "wordpress_logged_in_5e44dbdfb5841b744db4ddd7da2ac21c": "tlarkin3|1775241968|Cli572yxnO2XXLtHmqeIhJXIEpIpTY0murdqKRQE5sY|63be5da561111c879f6a4225279036f18188f6091780dbb47d5239cdd819c40d",
+    "wordpress_sec_5e44dbdfb5841b744db4ddd7da2ac21c": "tlarkin3|1775241968|SLFf4DIQcrZPpjqOX3uKxLoHkHzFepAaiu87NMzZlel|71d367655536fd620eb33cc923b5ea09f8f017f0b077e88578b9d134b0b59118",
+}
+
+# Legacy single-cookie config (kept for reference)
 FISHDOPE_SESSION_COOKIE_NAME = "wordpress_logged_in_5e44dbdfb5841b744db4ddd7da2ac21c"
-FISHDOPE_SESSION_COOKIE_VALUE = ""  # PASTE YOUR COOKIE VALUE HERE
+FISHDOPE_SESSION_COOKIE_VALUE = FISHDOPE_COOKIES[FISHDOPE_SESSION_COOKIE_NAME]
 
 # -- Scraper Settings --
 BASE_URL = "https://www.fishdope.com/category/fish-reports/"
