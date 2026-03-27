@@ -8,563 +8,761 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-         background: #0f1117; color: #e2e8f0; height: 100vh; display: flex; flex-direction: column; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+       background:#0f1117; color:#e2e8f0; height:100vh;
+       display:flex; flex-direction:column; overflow:hidden; }
 
-  #header {
-    background: #1a1f2e; border-bottom: 1px solid #2d3748; padding: 10px 16px;
-    display: flex; align-items: center; gap: 16px; flex-wrap: wrap; z-index: 1000;
-  }
-  #header h1 { font-size: 16px; font-weight: 700; color: #f59e0b; white-space: nowrap; }
-  #header .subtitle { font-size: 12px; color: #94a3b8; }
+/* ── Header ─────────────────────────────────────────────── */
+#header {
+  background:#1a1f2e; border-bottom:1px solid #2d3748;
+  padding:8px 14px; display:flex; align-items:center;
+  gap:14px; flex-wrap:wrap; z-index:1000; flex-shrink:0;
+}
+#header h1 { font-size:15px; font-weight:700; color:#f59e0b; white-space:nowrap; }
+#header .sub { font-size:11px; color:#64748b; }
+.ctrl-group { display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+.ctrl-lbl { font-size:10px; color:#64748b; text-transform:uppercase; letter-spacing:.05em; }
+select { background:#2d3748; border:1px solid #4a5568; color:#e2e8f0;
+         border-radius:4px; padding:3px 7px; font-size:12px; }
+.lbtn {
+  background:#2d3748; border:1px solid #4a5568; color:#94a3b8;
+  border-radius:4px; padding:3px 9px; font-size:11px; cursor:pointer;
+  transition:all .15s; white-space:nowrap;
+}
+.lbtn.on { background:#f59e0b22; border-color:#f59e0b; color:#f59e0b; }
+.lbtn:hover { border-color:#f59e0b; color:#f59e0b; }
 
-  .ctrl-group { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-  .ctrl-label { font-size: 11px; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; }
+/* ── Map ─────────────────────────────────────────────────── */
+#map { flex:1; min-height:0; }
 
-  select, input[type=range] {
-    background: #2d3748; border: 1px solid #4a5568; color: #e2e8f0;
-    border-radius: 4px; padding: 4px 8px; font-size: 12px;
-  }
-  select:focus { outline: none; border-color: #f59e0b; }
+/* ── Timeline bar ────────────────────────────────────────── */
+#timeline {
+  background:#1a1f2e; border-top:1px solid #2d3748;
+  padding:8px 14px; z-index:1000; flex-shrink:0;
+  display:flex; flex-direction:column; gap:6px;
+}
+#tl-top { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+#tl-date {
+  font-size:13px; font-weight:600; color:#f59e0b;
+  min-width:140px; text-align:center;
+}
+.play-btn {
+  width:32px; height:32px; border-radius:50%;
+  background:#f59e0b; border:none; cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  font-size:14px; color:#1a1f2e; flex-shrink:0;
+  transition:background .15s;
+}
+.play-btn:hover { background:#fbbf24; }
+.step-btn {
+  width:26px; height:26px; border-radius:4px;
+  background:#2d3748; border:1px solid #4a5568;
+  cursor:pointer; display:flex; align-items:center;
+  justify-content:center; font-size:12px; color:#94a3b8;
+}
+.step-btn:hover { border-color:#f59e0b; color:#f59e0b; }
 
-  .layer-btn {
-    background: #2d3748; border: 1px solid #4a5568; color: #94a3b8;
-    border-radius: 4px; padding: 4px 10px; font-size: 11px; cursor: pointer;
-    transition: all 0.15s;
-  }
-  .layer-btn.active { background: #f59e0b22; border-color: #f59e0b; color: #f59e0b; }
-  .layer-btn:hover { border-color: #f59e0b; color: #f59e0b; }
+#tl-scrubber {
+  flex:1; min-width:200px; appearance:none;
+  height:4px; border-radius:2px; background:#2d3748;
+  outline:none; cursor:pointer;
+}
+#tl-scrubber::-webkit-slider-thumb {
+  appearance:none; width:14px; height:14px;
+  border-radius:50%; background:#f59e0b; cursor:pointer;
+}
+#tl-scrubber::-moz-range-thumb {
+  width:14px; height:14px; border-radius:50%;
+  background:#f59e0b; cursor:pointer; border:none;
+}
 
-  #map { flex: 1; }
+/* Mini spark strip under scrubber */
+#tl-strip {
+  height:20px; position:relative; pointer-events:none;
+  border-radius:2px; overflow:hidden;
+  display:flex; align-items:flex-end; gap:1px;
+}
+.tl-bar { background:#2d3748; border-radius:1px 1px 0 0; flex-shrink:0; }
+.tl-bar.has-data { background:#f59e0b44; }
+.tl-bar.active { background:#f59e0b; }
 
-  #panel {
-    position: absolute; top: 70px; right: 12px; width: 280px;
-    background: #1a1f2edd; border: 1px solid #2d3748; border-radius: 8px;
-    padding: 12px; z-index: 800; max-height: calc(100vh - 90px); overflow-y: auto;
-    backdrop-filter: blur(8px);
-  }
-  #panel h3 { font-size: 13px; color: #f59e0b; margin-bottom: 10px; }
+#tl-bottom { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.gran-btns { display:flex; gap:4px; }
+.gbtn {
+  background:#2d3748; border:1px solid #4a5568; color:#64748b;
+  border-radius:4px; padding:2px 8px; font-size:11px; cursor:pointer;
+}
+.gbtn.on { background:#3b82f622; border-color:#3b82f6; color:#3b82f6; }
 
-  .species-list { display: flex; flex-direction: column; gap: 4px; }
-  .sp-row {
-    display: flex; align-items: center; gap: 8px; cursor: pointer;
-    padding: 4px 6px; border-radius: 4px; transition: background 0.1s;
-  }
-  .sp-row:hover { background: #2d374844; }
-  .sp-row.active { background: #2d3748; }
-  .sp-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
-  .sp-name { font-size: 12px; color: #cbd5e1; flex: 1; }
-  .sp-count { font-size: 11px; color: #64748b; }
+.speed-btns { display:flex; gap:4px; }
+.spbtn {
+  background:#2d3748; border:1px solid #4a5568; color:#64748b;
+  border-radius:4px; padding:2px 7px; font-size:11px; cursor:pointer;
+}
+.spbtn.on { background:#10b98122; border-color:#10b981; color:#10b981; }
 
-  #info-box {
-    position: absolute; bottom: 20px; left: 12px;
-    background: #1a1f2edd; border: 1px solid #2d3748; border-radius: 8px;
-    padding: 12px; z-index: 800; max-width: 320px;
-    backdrop-filter: blur(8px); display: none;
-  }
-  #info-box h4 { font-size: 13px; color: #f59e0b; margin-bottom: 6px; }
-  #info-box .info-row { font-size: 12px; color: #94a3b8; margin: 3px 0; }
-  #info-box .info-row span { color: #e2e8f0; }
+#tl-range-lbl { font-size:10px; color:#4a5568; }
+.tl-ctrl-lbl { font-size:10px; color:#64748b; margin-right:-2px; }
 
-  .legend {
-    position: absolute; bottom: 20px; right: 12px; z-index: 800;
-    background: #1a1f2edd; border: 1px solid #2d3748; border-radius: 8px;
-    padding: 10px; backdrop-filter: blur(8px);
-  }
-  .legend-title { font-size: 11px; color: #64748b; margin-bottom: 6px; text-transform: uppercase; }
-  .legend-row { display: flex; align-items: center; gap: 6px; margin: 3px 0; font-size: 11px; }
-  .legend-swatch { width: 14px; height: 14px; border-radius: 2px; }
+/* ── Panels ──────────────────────────────────────────────── */
+#panel {
+  position:absolute; top:60px; right:10px; width:200px;
+  background:#1a1f2edd; border:1px solid #2d3748; border-radius:8px;
+  padding:10px; z-index:800; max-height:calc(100vh - 140px);
+  overflow-y:auto; backdrop-filter:blur(8px);
+}
+#panel h3 { font-size:12px; color:#f59e0b; margin-bottom:8px; }
+.sp-row {
+  display:flex; align-items:center; gap:7px; cursor:pointer;
+  padding:3px 5px; border-radius:4px; transition:background .1s;
+}
+.sp-row:hover { background:#2d374844; }
+.sp-row.on { background:#2d3748; }
+.sp-dot { width:9px; height:9px; border-radius:50%; flex-shrink:0; }
+.sp-name { font-size:11px; color:#cbd5e1; flex:1; }
+.sp-ct { font-size:10px; color:#475569; }
 
-  .quality-bar {
-    display: flex; gap: 2px; margin-top: 4px;
-  }
-  .q-swatch { flex: 1; height: 8px; border-radius: 2px; }
+#info-box {
+  position:absolute; bottom:120px; left:10px;
+  background:#1a1f2edd; border:1px solid #2d3748; border-radius:8px;
+  padding:10px; z-index:800; max-width:280px; display:none;
+  backdrop-filter:blur(8px);
+}
+#info-box h4 { font-size:12px; color:#f59e0b; margin-bottom:5px; }
+.irow { font-size:11px; color:#94a3b8; margin:2px 0; }
+.irow span { color:#e2e8f0; }
 
-  /* Cluster overrides */
-  .marker-cluster-small div,
-  .marker-cluster-medium div,
-  .marker-cluster-large div {
-    background-color: rgba(245,158,11,0.85) !important;
-    color: #1a1f2e !important;
-    font-weight: 700;
-    font-size: 12px;
-  }
-  .marker-cluster-small,
-  .marker-cluster-medium,
-  .marker-cluster-large {
-    background-color: rgba(245,158,11,0.3) !important;
-  }
+.legend {
+  position:absolute; bottom:120px; right:10px; z-index:800;
+  background:#1a1f2edd; border:1px solid #2d3748; border-radius:8px;
+  padding:8px; backdrop-filter:blur(8px);
+}
+.ltitle { font-size:10px; color:#64748b; margin-bottom:5px; text-transform:uppercase; }
+.lrow { display:flex; align-items:center; gap:5px; margin:2px 0; font-size:10px; color:#94a3b8; }
+.lsw { width:12px; height:12px; border-radius:2px; flex-shrink:0; }
+.qbar { display:flex; gap:2px; margin-top:3px; }
+.qsw { flex:1; height:7px; border-radius:2px; }
 
-  /* Loading overlay */
-  #loading {
-    position: absolute; inset: 0; background: #0f1117ee; z-index: 2000;
-    display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 12px;
-  }
-  #loading-text { font-size: 14px; color: #94a3b8; }
-  .spinner { width: 32px; height: 32px; border: 3px solid #2d3748;
-             border-top-color: #f59e0b; border-radius: 50%; animation: spin 0.8s linear infinite; }
-  @keyframes spin { to { transform: rotate(360deg); } }
+/* ── Cluster overrides ───────────────────────────────────── */
+.marker-cluster div { font-weight:700; font-size:11px; }
+
+/* ── Loading ─────────────────────────────────────────────── */
+#loading {
+  position:absolute; inset:0; background:#0f1117ee; z-index:2000;
+  display:flex; align-items:center; justify-content:center; flex-direction:column; gap:10px;
+}
+#ldg-txt { font-size:13px; color:#94a3b8; }
+.spin { width:30px; height:30px; border:3px solid #2d3748;
+        border-top-color:#f59e0b; border-radius:50%;
+        animation:spin .8s linear infinite; }
+@keyframes spin { to { transform:rotate(360deg); } }
 </style>
 </head>
 <body>
 
+<!-- Header -->
 <div id="header">
-  <div>
-    <h1>🎣 FishLark</h1>
-    <div class="subtitle">SoCal & Baja Fishing Intelligence</div>
+  <div><h1>🎣 FishLark</h1><div class="sub">SoCal &amp; Baja Fishing Intelligence</div></div>
+
+  <div class="ctrl-group">
+    <span class="ctrl-lbl">Layers</span>
+    <button class="lbtn on" id="btn-hotspots"    onclick="toggleLayer('hotspots')">Hotspots</button>
+    <button class="lbtn on" id="btn-tracks"      onclick="toggleLayer('tracks')">Tracks</button>
+    <button class="lbtn"    id="btn-waypoints"   onclick="toggleLayer('waypoints')">Waypoints</button>
+    <button class="lbtn"    id="btn-observations"onclick="toggleLayer('observations')">Observations</button>
   </div>
 
   <div class="ctrl-group">
-    <span class="ctrl-label">Layer</span>
-    <button class="layer-btn active" id="btn-hotspots" onclick="toggleLayer('hotspots')">Hotspots</button>
-    <button class="layer-btn active" id="btn-tracks" onclick="toggleLayer('tracks')">Migration Tracks</button>
-    <button class="layer-btn" id="btn-waypoints" onclick="toggleLayer('waypoints')">GPS Waypoints</button>
-    <button class="layer-btn" id="btn-observations" onclick="toggleLayer('observations')">Raw Observations</button>
-  </div>
-
-  <div class="ctrl-group">
-    <span class="ctrl-label">Basemap</span>
-    <select id="basemap-sel" onchange="switchBasemap(this.value)">
+    <span class="ctrl-lbl">Basemap</span>
+    <select onchange="switchBasemap(this.value)">
       <option value="ocean">ESRI Ocean</option>
       <option value="osm">OpenStreetMap</option>
       <option value="satellite">ESRI Satellite</option>
       <option value="dark">CartoDB Dark</option>
     </select>
   </div>
-
-  <div class="ctrl-group">
-    <span class="ctrl-label">Month</span>
-    <select id="month-sel" onchange="filterMonth(this.value)">
-      <option value="all">All Year</option>
-      <option value="1">January</option><option value="2">February</option>
-      <option value="3">March</option><option value="4">April</option>
-      <option value="5">May</option><option value="6">June</option>
-      <option value="7">July</option><option value="8">August</option>
-      <option value="9">September</option><option value="10">October</option>
-      <option value="11">November</option><option value="12">December</option>
-    </select>
-  </div>
 </div>
 
+<!-- Map -->
 <div id="map"></div>
+
+<!-- Timeline -->
+<div id="timeline">
+  <div id="tl-top">
+    <button class="step-btn" onclick="stepTime(-1)" title="Step back">◀</button>
+    <button class="play-btn" id="play-btn" onclick="togglePlay()">▶</button>
+    <button class="step-btn" onclick="stepTime(1)"  title="Step forward">▶</button>
+    <div id="tl-date">—</div>
+    <input type="range" id="tl-scrubber" min="0" value="0" step="1"
+           oninput="scrubTo(parseInt(this.value))">
+    <div id="tl-range-lbl"></div>
+  </div>
+  <div id="tl-strip"></div>
+  <div id="tl-bottom">
+    <span class="tl-ctrl-lbl">View:</span>
+    <div class="gran-btns">
+      <button class="gbtn"    onclick="setGranularity('day')">Day</button>
+      <button class="gbtn on" onclick="setGranularity('week')">Week</button>
+      <button class="gbtn"    onclick="setGranularity('month')">Month</button>
+    </div>
+    <span class="tl-ctrl-lbl" style="margin-left:8px">Speed:</span>
+    <div class="speed-btns">
+      <button class="spbtn"    onclick="setSpeed(0.5)">0.5×</button>
+      <button class="spbtn on" onclick="setSpeed(1)">1×</button>
+      <button class="spbtn"    onclick="setSpeed(2)">2×</button>
+      <button class="spbtn"    onclick="setSpeed(4)">4×</button>
+      <button class="spbtn"    onclick="setSpeed(8)">8×</button>
+    </div>
+    <span class="tl-ctrl-lbl" style="margin-left:8px">Trail:</span>
+    <div class="gran-btns">
+      <button class="gbtn"    onclick="setTrail(1)">Off</button>
+      <button class="gbtn on" onclick="setTrail(3)">Short</button>
+      <button class="gbtn"    onclick="setTrail(6)">Long</button>
+    </div>
+  </div>
+</div>
 
 <!-- Species panel -->
 <div id="panel">
   <h3>Species</h3>
-  <div class="species-list" id="species-list"></div>
+  <div style="display:flex;gap:6px;margin-bottom:6px;padding-bottom:6px;border-bottom:1px solid #2d3748">
+    <button class="lbtn" onclick="selAll(true)"  style="font-size:10px;padding:2px 6px">All</button>
+    <button class="lbtn" onclick="selAll(false)" style="font-size:10px;padding:2px 6px">None</button>
+  </div>
+  <div id="sp-list"></div>
 </div>
 
 <!-- Info box -->
-<div id="info-box">
-  <h4 id="info-title">—</h4>
-  <div id="info-content"></div>
-</div>
+<div id="info-box"><h4 id="info-title">—</h4><div id="info-body"></div></div>
 
-<!-- Quality legend -->
+<!-- Legend -->
 <div class="legend">
-  <div class="legend-title">Catch Quality</div>
-  <div class="quality-bar">
-    <div class="q-swatch" style="background:#374151" title="0 – None"></div>
-    <div class="q-swatch" style="background:#6b7280" title="1 – Poor"></div>
-    <div class="q-swatch" style="background:#f59e0b" title="2 – Fair"></div>
-    <div class="q-swatch" style="background:#f97316" title="3 – Good"></div>
-    <div class="q-swatch" style="background:#ef4444" title="4 – Very Good"></div>
-    <div class="q-swatch" style="background:#dc2626" title="5 – Excellent"></div>
+  <div class="ltitle">Catch Quality</div>
+  <div class="qbar">
+    <div class="qsw" style="background:#374151" title="0"></div>
+    <div class="qsw" style="background:#6b7280" title="1"></div>
+    <div class="qsw" style="background:#f59e0b" title="2"></div>
+    <div class="qsw" style="background:#f97316" title="3"></div>
+    <div class="qsw" style="background:#ef4444" title="4"></div>
+    <div class="qsw" style="background:#dc2626" title="5"></div>
   </div>
-  <div style="display:flex;justify-content:space-between;font-size:10px;color:#64748b;margin-top:2px">
+  <div style="display:flex;justify-content:space-between;font-size:9px;color:#475569;margin-top:1px">
     <span>None</span><span>Excellent</span>
   </div>
-  <div style="margin-top:8px">
-    <div class="legend-row"><div class="legend-swatch" style="background:#3b82f6;border-radius:50%"></div><span>Hotspot (size = days)</span></div>
-    <div class="legend-row"><div style="width:14px;height:3px;background:#f59e0b"></div><span>Migration track</span></div>
-    <div class="legend-row"><div class="legend-swatch" style="background:#10b98188;border-radius:50%"></div><span>GPS waypoint</span></div>
+  <div style="margin-top:7px">
+    <div class="lrow"><div class="lsw" style="background:#3b82f6;border-radius:50%"></div>Hotspot (size=days)</div>
+    <div class="lrow"><div style="width:12px;height:2px;background:#f59e0b"></div>Migration track</div>
+    <div class="lrow"><div class="lsw" style="background:#10b981;border-radius:50%"></div>GPS waypoint</div>
+    <div class="lrow"><div class="lsw" style="background:#94a3b8;border-radius:50%"></div>Observation</div>
   </div>
 </div>
 
-<div id="loading">
-  <div class="spinner"></div>
-  <div id="loading-text">Loading FishLark data…</div>
-</div>
+<div id="loading"><div class="spin"></div><div id="ldg-txt">Loading…</div></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script>
-// ---------------------------------------------------------------------------
-// Basemap tiles
-// ---------------------------------------------------------------------------
+// ─────────────────────────────────────────────────────────────────────────────
+// Constants
+// ─────────────────────────────────────────────────────────────────────────────
+const SP_COLOR = {
+  yellowtail:'#f59e0b', bluefin_tuna:'#3b82f6', yellowfin_tuna:'#f97316',
+  dorado:'#10b981', white_seabass:'#8b5cf6', halibut:'#64748b',
+  barracuda:'#ef4444', bonito:'#06b6d4', calico_bass:'#84cc16',
+  sand_bass:'#a3e635', rockfish:'#dc2626', sculpin:'#b45309',
+  whitefish:'#e2e8f0', lingcod:'#475569', sheephead:'#ec4899', squid:'#a78bfa',
+};
+const Q_COLOR = ['#374151','#6b7280','#f59e0b','#f97316','#ef4444','#dc2626'];
+const TRAIL_OPACITY = [0.85, 0.45, 0.22, 0.10, 0.06, 0.03]; // current → oldest
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Map setup
+// ─────────────────────────────────────────────────────────────────────────────
+const map = L.map('map',{zoomControl:true}).setView([32.7,-117.8],8);
 const TILES = {
-  ocean:     ['https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}',
-              '© ESRI, GEBCO, NOAA'],
-  osm:       ['https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', '© OpenStreetMap'],
-  satellite: ['https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-              '© ESRI'],
-  dark:      ['https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', '© CartoDB'],
+  ocean:    ['https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}','© ESRI'],
+  osm:      ['https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png','© OpenStreetMap'],
+  satellite:['https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}','© ESRI'],
+  dark:     ['https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png','© CartoDB'],
 };
+let baseTile = L.tileLayer(TILES.ocean[0],{attribution:TILES.ocean[1],maxZoom:19}).addTo(map);
+function switchBasemap(k){map.removeLayer(baseTile);baseTile=L.tileLayer(TILES[k][0],{attribution:TILES[k][1],maxZoom:19}).addTo(map);baseTile.bringToBack();}
 
-const map = L.map('map', { zoomControl: true }).setView([32.7, -117.8], 8);
-let currentTile = L.tileLayer(TILES.ocean[0], { attribution: TILES.ocean[1], maxZoom: 19 }).addTo(map);
-
-function switchBasemap(key) {
-  map.removeLayer(currentTile);
-  currentTile = L.tileLayer(TILES[key][0], { attribution: TILES[key][1], maxZoom: 19 }).addTo(map);
-  currentTile.bringToBack();
-}
-
-// ---------------------------------------------------------------------------
+// ─────────────────────────────────────────────────────────────────────────────
 // State
-// ---------------------------------------------------------------------------
-const SPECIES_COLORS = {
-  yellowtail: '#f59e0b', bluefin_tuna: '#3b82f6', yellowfin_tuna: '#f97316',
-  dorado: '#10b981', white_seabass: '#8b5cf6', halibut: '#64748b',
-  barracuda: '#ef4444', bonito: '#06b6d4', calico_bass: '#84cc16',
-  sand_bass: '#a3e635', rockfish: '#dc2626', sculpin: '#b45309',
-  whitefish: '#e2e8f0', lingcod: '#475569', sheephead: '#ec4899',
-  squid: '#a78bfa',
+// ─────────────────────────────────────────────────────────────────────────────
+let geoData   = {};
+let layerVis  = {hotspots:true, tracks:true, waypoints:false, observations:false};
+let layers    = {hotspots:null, tracks:null, waypoints:null, observations:null};
+let activeSpecies = new Set(Object.keys(SP_COLOR));
+
+// Timeline
+let tl = {
+  granularity: 'week',  // 'day'|'week'|'month'
+  periods:     [],       // sorted period keys
+  index:       0,        // current period index
+  playing:     false,
+  speed:       1,        // steps per second
+  trail:       3,        // how many trailing periods to show
+  timer:       null,
+  obsIndex:    {},       // periodKey → [features]   (all granularities rebuilt on change)
 };
 
-const QUALITY_COLORS = ['#374151','#6b7280','#f59e0b','#f97316','#ef4444','#dc2626'];
-
-let layers = { hotspots: null, tracks: null, waypoints: null, observations: null };
-let layerVisible = { hotspots: true, tracks: true, waypoints: false, observations: false };
-let activeSpecies = new Set(Object.keys(SPECIES_COLORS));
-let currentMonth = 'all';
-let geoData = {};
-
-// ---------------------------------------------------------------------------
-// Load GeoJSON files
-// ---------------------------------------------------------------------------
-async function loadJSON(path) {
+// ─────────────────────────────────────────────────────────────────────────────
+// Load data
+// ─────────────────────────────────────────────────────────────────────────────
+async function loadJSON(path){
   const r = await fetch(path);
-  if (!r.ok) throw new Error(`Failed to load ${path}: ${r.status}`);
+  if(!r.ok) throw new Error(`${path}: HTTP ${r.status}`);
   return r.json();
 }
 
-async function init() {
+async function init(){
   try {
-    document.getElementById('loading-text').textContent = 'Loading hotspots…';
-    geoData.hotspots = await loadJSON('species_hotspots.geojson');
-
-    document.getElementById('loading-text').textContent = 'Loading migration tracks…';
-    geoData.tracks = await loadJSON('migration_tracks.geojson');
-
-    document.getElementById('loading-text').textContent = 'Loading GPS waypoints…';
-    geoData.waypoints = await loadJSON('gps_waypoints.geojson');
-
-    document.getElementById('loading-text').textContent = 'Loading observations…';
-    try {
-      geoData.observations = await loadJSON('daily_observations.geojson');
-    } catch (e) {
-      geoData.observations = { type: 'FeatureCollection', features: [] };
-    }
+    setText('Loading hotspots…');      geoData.hotspots     = await loadJSON('species_hotspots.geojson');
+    setText('Loading tracks…');        geoData.tracks       = await loadJSON('migration_tracks.geojson');
+    setText('Loading waypoints…');     geoData.waypoints    = await loadJSON('gps_waypoints.geojson');
+    setText('Loading observations…');
+    try { geoData.observations = await loadJSON('daily_observations.geojson'); }
+    catch{ geoData.observations = {type:'FeatureCollection',features:[]}; }
 
     buildSpeciesPanel();
-    renderAll();
-    document.getElementById('loading').style.display = 'none';
-  } catch (e) {
-    document.getElementById('loading-text').textContent = 'Error: ' + e.message +
-      ' — Make sure you ran: python export_geo.py';
+    buildTimelineIndex('week');
+    renderStatic();
+    document.getElementById('loading').style.display='none';
+  } catch(e) {
+    setText('Error: '+e.message+' — run python export_geo.py');
     console.error(e);
   }
 }
+function setText(t){document.getElementById('ldg-txt').textContent=t;}
 
-// ---------------------------------------------------------------------------
-// Species panel
-// ---------------------------------------------------------------------------
-function buildSpeciesPanel() {
-  // Count hotspots per species
-  const counts = {};
-  for (const f of geoData.hotspots.features) {
-    const sp = f.properties.species;
-    counts[sp] = (counts[sp] || 0) + 1;
-  }
-
-  const el = document.getElementById('species-list');
-  el.innerHTML = '';
-
-  // All / None toggles
-  const allRow = document.createElement('div');
-  allRow.style.cssText = 'display:flex;gap:8px;margin-bottom:6px;padding-bottom:6px;border-bottom:1px solid #2d3748';
-  allRow.innerHTML = `
-    <button class="layer-btn active" onclick="selectAllSpecies(true)" style="font-size:10px;padding:2px 8px">All</button>
-    <button class="layer-btn" onclick="selectAllSpecies(false)" style="font-size:10px;padding:2px 8px">None</button>
-  `;
-  el.appendChild(allRow);
-
-  const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
-  for (const [sp, count] of sorted) {
-    const color = SPECIES_COLORS[sp] || '#6b7280';
-    const row = document.createElement('div');
-    row.className = 'sp-row active';
-    row.id = `sp-row-${sp}`;
-    row.onclick = () => toggleSpecies(sp);
-    row.innerHTML = `
-      <div class="sp-dot" style="background:${color}"></div>
-      <div class="sp-name">${sp.replace(/_/g, ' ')}</div>
-      <div class="sp-count">${count}</div>
-    `;
-    el.appendChild(row);
-  }
+// ─────────────────────────────────────────────────────────────────────────────
+// Timeline index builder
+// ─────────────────────────────────────────────────────────────────────────────
+function periodKey(dateStr, gran){
+  if(!dateStr||dateStr.length<10) return null;
+  if(gran==='day')   return dateStr.slice(0,10);
+  if(gran==='month') return dateStr.slice(0,7);
+  // week: ISO week YYYY-Www
+  const d = new Date(dateStr);
+  const jan4 = new Date(d.getFullYear(),0,4);
+  const wk   = Math.ceil(((d-jan4)/86400000 + jan4.getDay()+1)/7);
+  return `${d.getFullYear()}-W${String(wk).padStart(2,'0')}`;
 }
 
-function toggleSpecies(sp) {
-  if (activeSpecies.has(sp)) {
-    activeSpecies.delete(sp);
-    document.getElementById(`sp-row-${sp}`)?.classList.remove('active');
-  } else {
-    activeSpecies.add(sp);
-    document.getElementById(`sp-row-${sp}`)?.classList.add('active');
-  }
-  renderAll();
+function weekStart(key){
+  // "2024-W22" → Monday of that week
+  const [y,w] = key.split('-W');
+  const jan4  = new Date(+y,0,4);
+  const d     = new Date(jan4.getTime()+(parseInt(w)-1)*7*86400000);
+  d.setDate(d.getDate()-d.getDay()+1);
+  return d.toISOString().slice(0,10);
 }
 
-function selectAllSpecies(all) {
-  activeSpecies = all ? new Set(Object.keys(SPECIES_COLORS)) : new Set();
-  document.querySelectorAll('.sp-row').forEach(r => {
-    if (all) r.classList.add('active'); else r.classList.remove('active');
+function buildTimelineIndex(gran){
+  tl.granularity = gran;
+  tl.obsIndex = {};
+  const feats = (geoData.observations||{features:[]}).features;
+  for(const f of feats){
+    const k = periodKey(f.properties.date, gran);
+    if(!k) continue;
+    if(!tl.obsIndex[k]) tl.obsIndex[k]=[];
+    tl.obsIndex[k].push(f);
+  }
+  tl.periods = Object.keys(tl.obsIndex).sort();
+
+  // Rebuild scrubber + strip
+  const scrub = document.getElementById('tl-scrubber');
+  scrub.max  = Math.max(0, tl.periods.length-1);
+  scrub.value= tl.index = Math.min(tl.index, tl.periods.length-1);
+
+  buildStrip();
+  updateDateLabel();
+}
+
+function buildStrip(){
+  const strip = document.getElementById('tl-strip');
+  strip.innerHTML='';
+  const n = tl.periods.length;
+  if(!n) return;
+  const maxCount = Math.max(...tl.periods.map(k=>tl.obsIndex[k].length));
+  tl.periods.forEach((k,i)=>{
+    const bar = document.createElement('div');
+    bar.className='tl-bar has-data';
+    bar.id=`tlb-${i}`;
+    const h = Math.max(3, Math.round((tl.obsIndex[k].length/maxCount)*18));
+    bar.style.cssText=`width:${Math.max(1,Math.floor(strip.clientWidth/n)-1)}px;height:${h}px`;
+    strip.appendChild(bar);
   });
-  renderAll();
+  highlightStrip();
 }
 
-// ---------------------------------------------------------------------------
-// Layer toggle
-// ---------------------------------------------------------------------------
-function toggleLayer(name) {
-  layerVisible[name] = !layerVisible[name];
-  document.getElementById(`btn-${name}`).classList.toggle('active', layerVisible[name]);
-  renderAll();
+function highlightStrip(){
+  document.querySelectorAll('.tl-bar').forEach((b,i)=>{
+    b.classList.toggle('active', i>=tl.index-tl.trail && i<=tl.index);
+  });
 }
 
-// ---------------------------------------------------------------------------
-// Month filter
-// ---------------------------------------------------------------------------
-function filterMonth(val) {
-  currentMonth = val;
-  renderAll();
+function updateDateLabel(){
+  const k = tl.periods[tl.index];
+  if(!k){ document.getElementById('tl-date').textContent='—'; return; }
+  let label = k;
+  if(tl.granularity==='week'){
+    const ws = weekStart(k);
+    const we = new Date(new Date(ws).getTime()+6*86400000).toISOString().slice(0,10);
+    label = `${ws} → ${we}`;
+  }
+  document.getElementById('tl-date').textContent = label;
+
+  // Range label
+  if(tl.periods.length){
+    document.getElementById('tl-range-lbl').textContent =
+      `${tl.index+1} / ${tl.periods.length}`;
+  }
 }
 
-function matchesMonth(dateStr) {
-  if (currentMonth === 'all') return true;
-  if (!dateStr) return false;
-  const m = parseInt(dateStr.substring(5, 7));
-  return m === parseInt(currentMonth);
+// ─────────────────────────────────────────────────────────────────────────────
+// Animation controls
+// ─────────────────────────────────────────────────────────────────────────────
+function togglePlay(){
+  tl.playing=!tl.playing;
+  document.getElementById('play-btn').textContent = tl.playing?'⏸':'▶';
+  if(tl.playing) scheduleTick();
 }
 
-// ---------------------------------------------------------------------------
-// Render
-// ---------------------------------------------------------------------------
-function renderAll() {
+function scheduleTick(){
+  if(!tl.playing) return;
+  tl.timer = setTimeout(()=>{
+    stepTime(1, true);
+    scheduleTick();
+  }, 1000/tl.speed);
+}
+
+function stepTime(delta, fromTimer=false){
+  if(!fromTimer && tl.timer){ clearTimeout(tl.timer); tl.timer=null; }
+  tl.index = ((tl.index+delta)+tl.periods.length)%tl.periods.length;
+  document.getElementById('tl-scrubber').value=tl.index;
+  updateDateLabel();
+  highlightStrip();
+  if(layerVis.observations) renderObservations();
+  if(layerVis.tracks) renderTracks();
+}
+
+function scrubTo(i){
+  if(tl.playing){ clearTimeout(tl.timer); tl.timer=null; tl.playing=false; document.getElementById('play-btn').textContent='▶'; }
+  tl.index=i;
+  updateDateLabel();
+  highlightStrip();
+  if(layerVis.observations) renderObservations();
+  if(layerVis.tracks) renderTracks();
+}
+
+function setGranularity(g){
+  document.querySelectorAll('.gbtn').forEach(b=>b.classList.remove('on'));
+  event.target.classList.add('on');
+  if(tl.playing){ clearTimeout(tl.timer); tl.playing=false; document.getElementById('play-btn').textContent='▶'; }
+  tl.index=0;
+  buildTimelineIndex(g);
+  if(layerVis.observations) renderObservations();
+}
+
+function setSpeed(s){
+  document.querySelectorAll('.spbtn').forEach(b=>b.classList.remove('on'));
+  event.target.classList.add('on');
+  tl.speed=s;
+}
+
+function setTrail(n){
+  document.querySelectorAll('.gran-btns:last-of-type .gbtn').forEach(b=>b.classList.remove('on'));
+  event.target.classList.add('on');
+  tl.trail=n;
+  highlightStrip();
+  if(layerVis.observations) renderObservations();
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Layer toggles
+// ─────────────────────────────────────────────────────────────────────────────
+function toggleLayer(name){
+  layerVis[name]=!layerVis[name];
+  document.getElementById('btn-'+name).classList.toggle('on',layerVis[name]);
+  if(name==='observations') renderObservations();
+  else if(name==='tracks')  renderTracks();
+  else if(name==='hotspots') renderHotspots();
+  else if(name==='waypoints') renderWaypoints();
+}
+
+function clearL(name){ if(layers[name]){map.removeLayer(layers[name]);layers[name]=null;} }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Static renders (hotspots + waypoints — not time-dependent)
+// ─────────────────────────────────────────────────────────────────────────────
+function renderStatic(){
   renderHotspots();
-  renderTracks();
   renderWaypoints();
+  renderTracks();
   renderObservations();
 }
 
-function clearLayer(name) {
-  if (layers[name]) { map.removeLayer(layers[name]); layers[name] = null; }
-}
-
-function renderHotspots() {
-  clearLayer('hotspots');
-  if (!layerVisible.hotspots || !geoData.hotspots) return;
-
-  const group = L.layerGroup();
-  for (const f of geoData.hotspots.features) {
-    const p = f.properties;
-    if (!activeSpecies.has(p.species)) continue;
-    if (currentMonth !== 'all') {
-      const inMonth = matchesMonth(p.first_seen) || matchesMonth(p.last_seen);
-      if (!inMonth) continue;
-    }
-    const [lon, lat] = f.geometry.coordinates;
-    const radius = Math.max(5000, Math.min(40000, p.total_days * 500));
-    const color = p.color || SPECIES_COLORS[p.species] || '#6b7280';
-    const qColor = QUALITY_COLORS[Math.round(p.avg_quality)] || '#6b7280';
-
-    const circle = L.circle([lat, lon], {
-      radius,
-      color: color,
-      fillColor: qColor,
-      fillOpacity: 0.35,
-      weight: 2,
-      opacity: 0.8,
-    });
-    circle.bindPopup(buildHotspotPopup(p));
-    circle.on('click', () => showInfo(p.species_display + ' Hotspot', buildInfoRows(p)));
-    group.addLayer(circle);
+function renderHotspots(){
+  clearL('hotspots');
+  if(!layerVis.hotspots||!geoData.hotspots) return;
+  const g = L.layerGroup();
+  for(const f of geoData.hotspots.features){
+    const p=f.properties;
+    if(!activeSpecies.has(p.species)) continue;
+    const [lon,lat]=f.geometry.coordinates;
+    const r = Math.max(5000,Math.min(40000,p.total_days*500));
+    const c = SP_COLOR[p.species]||'#6b7280';
+    const qc= Q_COLOR[Math.round(p.avg_quality)]||'#6b7280';
+    L.circle([lat,lon],{radius:r,color:c,fillColor:qc,fillOpacity:.3,weight:2,opacity:.75})
+     .bindPopup(`<b>${p.species_display}</b><br>Days: ${p.total_days}<br>Quality: ${p.avg_quality}/5<br>Zones: ${p.zones}`)
+     .on('click',()=>showInfo(p.species_display+' Hotspot',
+       `<div class="irow">Days on spot: <span>${p.total_days}</span></div>
+        <div class="irow">GPS reports: <span>${p.total_points}</span></div>
+        <div class="irow">Quality: <span>${p.avg_quality}/5</span></div>
+        <div class="irow">Active: <span>${p.first_seen} → ${p.last_seen}</span></div>
+        <div class="irow">Zones: <span>${p.zones}</span></div>`))
+     .addTo(g);
   }
-  layers.hotspots = group.addTo(map);
+  layers.hotspots=g.addTo(map);
 }
 
-function renderTracks() {
-  clearLayer('tracks');
-  if (!layerVisible.tracks || !geoData.tracks) return;
+function renderWaypoints(){
+  clearL('waypoints');
+  if(!layerVis.waypoints||!geoData.waypoints) return;
+  const g=L.layerGroup();
+  for(const f of geoData.waypoints.features){
+    const p=f.properties;
+    if(!p.name) continue;
+    const [lon,lat]=f.geometry.coordinates;
+    L.circleMarker([lat,lon],{radius:3,color:'#10b981',fillColor:'#10b981',fillOpacity:.6,weight:1})
+     .bindPopup(`<b>${p.name}</b><br>Zone: ${p.zone}<br>${p.report_date}`)
+     .addTo(g);
+  }
+  layers.waypoints=g.addTo(map);
+}
 
-  const group = L.layerGroup();
-  for (const f of geoData.tracks.features) {
-    const p = f.properties;
-    if (!activeSpecies.has(p.species)) continue;
-    const color = p.color || SPECIES_COLORS[p.species] || '#6b7280';
+// ─────────────────────────────────────────────────────────────────────────────
+// Tracks — shows migration path UP TO current time period
+// ─────────────────────────────────────────────────────────────────────────────
+function renderTracks(){
+  clearL('tracks');
+  if(!layerVis.tracks||!geoData.tracks) return;
 
-    if (f.geometry.type === 'LineString') {
-      const latlngs = f.geometry.coordinates.map(c => [c[1], c[0]]);
-      const isAnnual = p.type === 'annual_migration';
-      const line = L.polyline(latlngs, {
-        color,
-        weight: isAnnual ? 3 : 1.5,
-        opacity: isAnnual ? 0.85 : 0.4,
-        dashArray: isAnnual ? null : '4 4',
-      });
-      if (isAnnual) {
-        line.bindPopup(`<b>${p.species_display}</b><br>Annual migration track`);
-      } else {
-        line.bindPopup(`<b>${p.species_display}</b><br>${p.date || ''}<br>${p.distance_miles || 0} mi — Moon: ${p.moon_phase || '?'}`);
+  const currentPeriod = tl.periods[tl.index] || null;
+  const g = L.layerGroup();
+
+  for(const f of geoData.tracks.features){
+    const p=f.properties;
+    if(!activeSpecies.has(p.species)) continue;
+    const c=SP_COLOR[p.species]||'#6b7280';
+
+    if(f.geometry.type==='LineString' && p.type==='annual_migration'){
+      // Only draw portion of the line up to the current month
+      let coords = f.geometry.coordinates;
+      if(currentPeriod && tl.granularity!=='month'){
+        // Filter monthly coords by whether they precede current period
+        const monthly = p.monthly_data||[];
+        const MNAMES=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        const curDate = tl.periods[tl.index]||'';
+        const curMonth = parseInt(curDate.slice(5,7)||'0');
+        const validIdxs = monthly.map((m,i)=>({m,i}))
+          .filter(({m})=>MNAMES.indexOf(m.month)+1<=curMonth)
+          .map(({i})=>i);
+        if(validIdxs.length>0) coords=validIdxs.map(i=>coords[i]);
+        else coords=[];
       }
-      group.addLayer(line);
-    } else if (f.geometry.type === 'Point' && p.type === 'monthly_centroid') {
-      if (currentMonth !== 'all' && p.month) {
-        const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-        const mIdx = monthNames.indexOf(p.month);
-        if (mIdx + 1 !== parseInt(currentMonth)) continue;
+      if(coords.length>=2){
+        L.polyline(coords.map(c=>[c[1],c[0]]),{color:c,weight:3,opacity:.8})
+         .bindPopup(`<b>${p.species_display}</b> annual migration`)
+         .addTo(g);
+        // Arrowhead at latest point
+        const last=coords[coords.length-1];
+        L.circleMarker([last[1],last[0]],{radius:5,color:c,fillColor:c,fillOpacity:1,weight:0})
+         .addTo(g);
       }
-      const [lon, lat] = f.geometry.coordinates;
-      const qColor = QUALITY_COLORS[Math.round(p.avg_quality)] || '#6b7280';
-      const marker = L.circleMarker([lat, lon], {
-        radius: 8,
-        color,
-        fillColor: qColor,
-        fillOpacity: 0.9,
-        weight: 2,
-      });
-      marker.bindPopup(`<b>${p.species_display}</b><br>${p.month}<br>Quality: ${p.avg_quality}<br>Days: ${p.n_report_days}<br>Zones: ${p.zones}`);
-      marker.on('click', () => showInfo(p.species_display + ' — ' + p.month,
-        `<div class="info-row">Avg Quality: <span>${p.avg_quality}</span></div>
-         <div class="info-row">Report Days: <span>${p.n_report_days}</span></div>
-         <div class="info-row">Zones: <span>${p.zones}</span></div>`));
-      group.addLayer(marker);
+    } else if(f.geometry.type==='Point' && p.type==='monthly_centroid'){
+      // Show monthly dots up to current month
+      const MNAMES=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      const mIdx = MNAMES.indexOf(p.month)+1;
+      const curDate = tl.periods[tl.index]||'';
+      const curMonth = parseInt(curDate.slice(5,7)||'0');
+      if(mIdx>0 && mIdx<=curMonth){
+        const [lon,lat]=f.geometry.coordinates;
+        const qc=Q_COLOR[Math.round(p.avg_quality)]||'#6b7280';
+        L.circleMarker([lat,lon],{radius:7,color:c,fillColor:qc,fillOpacity:.9,weight:2})
+         .bindPopup(`<b>${p.species_display}</b><br>${p.month}<br>Quality: ${p.avg_quality}<br>Days: ${p.n_report_days}`)
+         .addTo(g);
+      }
+    } else if(f.geometry.type==='LineString' && p.type==='migration_event'){
+      // Only show if event date is in current trail window
+      if(inTrailWindow(p.date)){
+        const [fromLon,fromLat]=f.geometry.coordinates[0];
+        const [toLon,toLat]=f.geometry.coordinates[1];
+        const age=periodAge(p.date);
+        const op=TRAIL_OPACITY[Math.min(age,TRAIL_OPACITY.length-1)];
+        L.polyline([[fromLat,fromLon],[toLat,toLon]],
+          {color:c,weight:2,opacity:op,dashArray:'5 4'})
+         .bindPopup(`<b>${p.species_display}</b><br>${p.date}<br>${p.distance_miles} mi<br>Moon: ${p.moon_phase}`)
+         .addTo(g);
+      }
     }
   }
-  layers.tracks = group.addTo(map);
+  layers.tracks=g.addTo(map);
 }
 
-function renderWaypoints() {
-  clearLayer('waypoints');
-  if (!layerVisible.waypoints || !geoData.waypoints) return;
+// ─────────────────────────────────────────────────────────────────────────────
+// Observations — clustered, with trail fade
+// ─────────────────────────────────────────────────────────────────────────────
+function renderObservations(){
+  clearL('observations');
+  if(!layerVis.observations||!geoData.observations) return;
+  if(!tl.periods.length){ renderObservationsAll(); return; }
 
-  const group = L.layerGroup();
-  for (const f of geoData.waypoints.features) {
-    const p = f.properties;
-    if (!p.name) continue;
-    const [lon, lat] = f.geometry.coordinates;
-    const marker = L.circleMarker([lat, lon], {
-      radius: 3, color: '#10b981', fillColor: '#10b981', fillOpacity: 0.6, weight: 1,
-    });
-    marker.bindPopup(`<b>${p.name}</b><br>Zone: ${p.zone}<br>Date: ${p.report_date}`);
-    group.addLayer(marker);
+  // Collect trail periods (current + previous trail-1)
+  const trailKeys=[];
+  for(let i=0;i<tl.trail;i++){
+    const idx=tl.index-i;
+    if(idx>=0) trailKeys.push({key:tl.periods[idx], age:i});
   }
-  layers.waypoints = group.addTo(map);
-}
 
-function renderObservations() {
-  clearLayer('observations');
-  if (!layerVisible.observations || !geoData.observations) return;
+  // Per-species cluster group for current period
+  const spGroups={};
+  const trailGroup=L.layerGroup(); // trail (non-current) goes in a plain layer
 
-  // Per-species cluster groups so dominant species sets cluster color
-  const spGroups = {};
+  for(const {key,age} of trailKeys){
+    const feats=tl.obsIndex[key]||[];
+    const opacity=TRAIL_OPACITY[Math.min(age,TRAIL_OPACITY.length-1)];
+    const isCurrent=(age===0);
 
-  for (const f of geoData.observations.features) {
-    const p = f.properties;
-    if (!activeSpecies.has(p.species)) continue;
-    if (!matchesMonth(p.date)) continue;
+    for(const f of feats){
+      const p=f.properties;
+      if(!activeSpecies.has(p.species)) continue;
+      const [lon,lat]=f.geometry.coordinates;
+      const c=SP_COLOR[p.species]||'#6b7280';
+      const qc=Q_COLOR[Math.round(p.quality)]||'#6b7280';
 
-    const [lon, lat] = f.geometry.coordinates;
-    const color = SPECIES_COLORS[p.species] || '#6b7280';
-    const qColor = p.quality_color || '#6b7280';
-
-    if (!spGroups[p.species]) {
-      const hexToRgba = (h, a) => {
-        const r = parseInt(h.slice(1,3),16), g = parseInt(h.slice(3,5),16), b = parseInt(h.slice(5,7),16);
-        return `rgba(${r},${g},${b},${a})`;
-      };
-      spGroups[p.species] = L.markerClusterGroup({
-        maxClusterRadius: 40,
-        spiderfyOnMaxZoom: true,
-        showCoverageOnHover: false,
-        zoomToBoundsOnClick: true,
-        iconCreateFunction(cluster) {
-          const count = cluster.getChildCount();
-          const size = count < 20 ? 28 : count < 100 ? 34 : 40;
-          return L.divIcon({
-            html: `<div style="
-              background:${hexToRgba(color, 0.25)};
-              border:2px solid ${color};
-              border-radius:50%;
-              width:${size}px;height:${size}px;
-              display:flex;align-items:center;justify-content:center;
-              font-size:11px;font-weight:700;color:${color};">${count}</div>`,
-            className: '',
-            iconSize: [size, size],
-            iconAnchor: [size/2, size/2],
+      if(isCurrent){
+        if(!spGroups[p.species]){
+          spGroups[p.species]=L.markerClusterGroup({
+            maxClusterRadius:40,
+            showCoverageOnHover:false,
+            zoomToBoundsOnClick:true,
+            iconCreateFunction(cl){
+              const n=cl.getChildCount();
+              const sz=n<20?28:n<100?34:40;
+              const rgba=hexAlpha(c,.25);
+              return L.divIcon({
+                html:`<div style="background:${rgba};border:2px solid ${c};border-radius:50%;width:${sz}px;height:${sz}px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:${c}">${n}</div>`,
+                className:'',iconSize:[sz,sz],iconAnchor:[sz/2,sz/2]
+              });
+            }
           });
-        },
-      });
+        }
+        const mk=L.circleMarker([lat,lon],{radius:5,color:c,fillColor:qc,fillOpacity:.9,weight:1.5});
+        mk.bindPopup(`<b>${p.species_display}</b><br>${p.date}${p.coord_name?' — '+p.coord_name:''}<br>Quality: ${p.quality}/5<br>Moon: ${p.moon_phase||'?'}<br>Tide: ${p.tide_dir||'?'}<br>Seas: ${p.seas_ft!=null?p.seas_ft+' ft':'?'}<br>Wind: ${p.wind_dir||'?'}<br>Temp: ${p.water_temp!=null?p.water_temp+'°F':'?'}`);
+        spGroups[p.species].addLayer(mk);
+      } else {
+        // Trail dot — plain circle, faded, no cluster
+        L.circleMarker([lat,lon],{radius:4,color:c,fillColor:c,fillOpacity:opacity*0.6,weight:0})
+         .addTo(trailGroup);
+      }
     }
-
-    const marker = L.circleMarker([lat, lon], {
-      radius: 5, color, fillColor: qColor, fillOpacity: 0.85, weight: 1.5,
-    });
-    marker.bindPopup(
-      `<b>${p.species_display}</b><br>
-       ${p.date}${p.coord_name ? ' — ' + p.coord_name : ''}<br>
-       Quality: ${p.quality}/5<br>
-       Moon: ${p.moon_phase || '?'}<br>
-       Tide: ${p.tide_dir || '?'}<br>
-       Seas: ${p.seas_ft != null ? p.seas_ft + ' ft' : '?'}<br>
-       Wind: ${p.wind_dir || '?'}<br>
-       Water temp: ${p.water_temp != null ? p.water_temp + '°F' : '?'}`
-    );
-    spGroups[p.species].addLayer(marker);
   }
 
-  const combined = L.layerGroup(Object.values(spGroups));
-  layers.observations = combined.addTo(map);
+  const combined=L.layerGroup([trailGroup,...Object.values(spGroups)]);
+  layers.observations=combined.addTo(map);
 }
 
-// ---------------------------------------------------------------------------
-// Popups and info panel
-// ---------------------------------------------------------------------------
-function buildHotspotPopup(p) {
-  return `<b>${p.species_display}</b><br>
-    Days on spot: ${p.total_days}<br>
-    GPS reports: ${p.total_points}<br>
-    Avg quality: ${p.avg_quality}/5<br>
-    Active: ${p.first_seen} → ${p.last_seen}<br>
-    Zones: ${p.zones}`;
+function renderObservationsAll(){
+  // Fallback: render all observations without time filter
+  const spGroups={};
+  for(const f of geoData.observations.features){
+    const p=f.properties;
+    if(!activeSpecies.has(p.species)) continue;
+    const [lon,lat]=f.geometry.coordinates;
+    const c=SP_COLOR[p.species]||'#6b7280';
+    const qc=Q_COLOR[Math.round(p.quality)]||'#6b7280';
+    if(!spGroups[p.species]) spGroups[p.species]=L.markerClusterGroup({maxClusterRadius:40,showCoverageOnHover:false});
+    spGroups[p.species].addLayer(
+      L.circleMarker([lat,lon],{radius:5,color:c,fillColor:qc,fillOpacity:.85,weight:1.5})
+       .bindPopup(`<b>${p.species_display}</b><br>${p.date}<br>Quality: ${p.quality}/5`)
+    );
+  }
+  layers.observations=L.layerGroup(Object.values(spGroups)).addTo(map);
 }
 
-function buildInfoRows(p) {
-  return `
-    <div class="info-row">Species: <span>${p.species_display}</span></div>
-    <div class="info-row">Days on spot: <span>${p.total_days}</span></div>
-    <div class="info-row">GPS reports: <span>${p.total_points}</span></div>
-    <div class="info-row">Avg quality: <span>${p.avg_quality} / 5</span></div>
-    <div class="info-row">Active: <span>${p.first_seen} → ${p.last_seen}</span></div>
-    <div class="info-row">Zones: <span>${p.zones}</span></div>
-  `;
+// ─────────────────────────────────────────────────────────────────────────────
+// Helpers
+// ─────────────────────────────────────────────────────────────────────────────
+function hexAlpha(h,a){
+  const r=parseInt(h.slice(1,3),16),g=parseInt(h.slice(3,5),16),b=parseInt(h.slice(5,7),16);
+  return `rgba(${r},${g},${b},${a})`;
 }
 
-function showInfo(title, content) {
-  document.getElementById('info-title').textContent = title;
-  document.getElementById('info-content').innerHTML = content;
-  document.getElementById('info-box').style.display = 'block';
+function inTrailWindow(dateStr){
+  if(!dateStr||!tl.periods.length) return false;
+  const k=periodKey(dateStr, tl.granularity);
+  const idx=tl.periods.indexOf(k);
+  return idx>=0 && idx<=tl.index && idx>=tl.index-tl.trail;
 }
 
-// Close info box on map click
-map.on('click', () => { document.getElementById('info-box').style.display = 'none'; });
+function periodAge(dateStr){
+  if(!dateStr||!tl.periods.length) return 999;
+  const k=periodKey(dateStr,tl.granularity);
+  const idx=tl.periods.indexOf(k);
+  return idx<0 ? 999 : tl.index-idx;
+}
 
-// ---------------------------------------------------------------------------
-// Start
-// ---------------------------------------------------------------------------
+function showInfo(title,body){
+  document.getElementById('info-title').textContent=title;
+  document.getElementById('info-body').innerHTML=body;
+  document.getElementById('info-box').style.display='block';
+}
+map.on('click',()=>{ document.getElementById('info-box').style.display='none'; });
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Species panel
+// ─────────────────────────────────────────────────────────────────────────────
+function buildSpeciesPanel(){
+  const counts={};
+  for(const f of geoData.hotspots.features){
+    const s=f.properties.species; counts[s]=(counts[s]||0)+1;
+  }
+  const el=document.getElementById('sp-list');
+  el.innerHTML='';
+  Object.entries(counts).sort((a,b)=>b[1]-a[1]).forEach(([sp,ct])=>{
+    const c=SP_COLOR[sp]||'#6b7280';
+    const row=document.createElement('div');
+    row.className='sp-row on'; row.id='spr-'+sp; row.onclick=()=>toggleSp(sp);
+    row.innerHTML=`<div class="sp-dot" style="background:${c}"></div><div class="sp-name">${sp.replace(/_/g,' ')}</div><div class="sp-ct">${ct}</div>`;
+    el.appendChild(row);
+  });
+}
+
+function toggleSp(sp){
+  if(activeSpecies.has(sp)){ activeSpecies.delete(sp); document.getElementById('spr-'+sp)?.classList.remove('on'); }
+  else { activeSpecies.add(sp); document.getElementById('spr-'+sp)?.classList.add('on'); }
+  renderStatic();
+}
+
+function selAll(v){
+  activeSpecies = v ? new Set(Object.keys(SP_COLOR)) : new Set();
+  document.querySelectorAll('.sp-row').forEach(r=>r.classList.toggle('on',v));
+  renderStatic();
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Resize strip on window resize
+// ─────────────────────────────────────────────────────────────────────────────
+window.addEventListener('resize', ()=>{ if(tl.periods.length) buildStrip(); });
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Boot
+// ─────────────────────────────────────────────────────────────────────────────
 init();
 </script>
 </body>
