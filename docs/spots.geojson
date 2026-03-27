@@ -1,0 +1,8357 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.362,
+          34.41566666666667
+        ]
+      },
+      "properties": {
+        "name": "San Augustine rockfish zone",
+        "notes": "Big area",
+        "section": "1. Santa Barbara Area",
+        "subsection": "Gaviota Coast / Goleta"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.21666666666667,
+          34.45666666666666
+        ]
+      },
+      "properties": {
+        "name": "Gaviota squid zone",
+        "notes": "Partial-take SMCA",
+        "section": "1. Santa Barbara Area",
+        "subsection": "Gaviota Coast / Goleta"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.10258333333333,
+          34.46191666666667
+        ]
+      },
+      "properties": {
+        "name": "Tajiguas",
+        "notes": "",
+        "section": "1. Santa Barbara Area",
+        "subsection": "Gaviota Coast / Goleta"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.92591666666667,
+          34.428666666666665
+        ]
+      },
+      "properties": {
+        "name": "Ellwood Pier / Bacara Resort",
+        "notes": "Stay E of SMCA at 119 56.000",
+        "section": "1. Santa Barbara Area",
+        "subsection": "Gaviota Coast / Goleta"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.901,
+          34.4175
+        ]
+      },
+      "properties": {
+        "name": "Ellwood",
+        "notes": "Stay W of MPA at 119 53.600",
+        "section": "1. Santa Barbara Area",
+        "subsection": "Gaviota Coast / Goleta"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.82675,
+          34.406666666666666
+        ]
+      },
+      "properties": {
+        "name": "Goleta Pipe",
+        "notes": "",
+        "section": "1. Santa Barbara Area",
+        "subsection": "Gaviota Coast / Goleta"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.8055,
+          34.41225
+        ]
+      },
+      "properties": {
+        "name": "Moore Mesa",
+        "notes": "",
+        "section": "1. Santa Barbara Area",
+        "subsection": "Gaviota Coast / Goleta"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.74458333333334,
+          34.39958333333333
+        ]
+      },
+      "properties": {
+        "name": "Hendry's Beach / Arroyo Burro",
+        "notes": "",
+        "section": "1. Santa Barbara Area",
+        "subsection": "Santa Barbara / Carpinteria"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.74333333333334,
+          34.38333333333333
+        ]
+      },
+      "properties": {
+        "name": "Hendry's / The Mesa salmon zone",
+        "notes": "Big area",
+        "section": "1. Santa Barbara Area",
+        "subsection": "Santa Barbara / Carpinteria"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.67366666666666,
+          34.394
+        ]
+      },
+      "properties": {
+        "name": "One Mile Reef",
+        "notes": "",
+        "section": "1. Santa Barbara Area",
+        "subsection": "Santa Barbara / Carpinteria"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.63616666666667,
+          34.35483333333333
+        ]
+      },
+      "properties": {
+        "name": "Four Mile Reef",
+        "notes": "",
+        "section": "1. Santa Barbara Area",
+        "subsection": "Santa Barbara / Carpinteria"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.58916666666667,
+          34.38166666666667
+        ]
+      },
+      "properties": {
+        "name": "Summerland / Padaro Lane salmon zone",
+        "notes": "Big area",
+        "section": "1. Santa Barbara Area",
+        "subsection": "Santa Barbara / Carpinteria"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.58333333333333,
+          34.333333333333336
+        ]
+      },
+      "properties": {
+        "name": "The Gap salmon zone",
+        "notes": "Big area",
+        "section": "1. Santa Barbara Area",
+        "subsection": "Santa Barbara / Carpinteria"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.57833333333333,
+          34.39516666666667
+        ]
+      },
+      "properties": {
+        "name": "Horseshoe Reef",
+        "notes": "",
+        "section": "1. Santa Barbara Area",
+        "subsection": "Santa Barbara / Carpinteria"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.56166666666667,
+          34.394333333333336
+        ]
+      },
+      "properties": {
+        "name": "Horseshoe Kelp",
+        "notes": "",
+        "section": "1. Santa Barbara Area",
+        "subsection": "Santa Barbara / Carpinteria"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.5355,
+          34.390166666666666
+        ]
+      },
+      "properties": {
+        "name": "Carpinteria Reef",
+        "notes": "",
+        "section": "1. Santa Barbara Area",
+        "subsection": "Santa Barbara / Carpinteria"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.54583333333333,
+          34.358333333333334
+        ]
+      },
+      "properties": {
+        "name": "The Armpit",
+        "notes": "",
+        "section": "1. Santa Barbara Area",
+        "subsection": "Santa Barbara / Carpinteria"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.44583333333334,
+          34.346333333333334
+        ]
+      },
+      "properties": {
+        "name": "Arco Island",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Ventura / Channel Islands Harbor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.46666666666667,
+          34.31666666666667
+        ]
+      },
+      "properties": {
+        "name": "Arco Island salmon zone",
+        "notes": "Big area",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Ventura / Channel Islands Harbor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.36833333333334,
+          34.302216666666666
+        ]
+      },
+      "properties": {
+        "name": "Pitas Point Artificial Reef",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Ventura / Channel Islands Harbor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.31666666666666,
+          34.233333333333334
+        ]
+      },
+      "properties": {
+        "name": "Ventura Flats",
+        "notes": "Big area",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Ventura / Channel Islands Harbor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.29566666666666,
+          34.13483333333333
+        ]
+      },
+      "properties": {
+        "name": "La Janelle (The LJ) Wreck",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Ventura / Channel Islands Harbor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.27716666666667,
+          34.1175
+        ]
+      },
+      "properties": {
+        "name": "Platform Gina",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Ventura / Channel Islands Harbor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.23333333333333,
+          34.083333333333336
+        ]
+      },
+      "properties": {
+        "name": "Hueneme Canyon",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Port Hueneme / Deep Hole"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.19733333333333,
+          34.102833333333336
+        ]
+      },
+      "properties": {
+        "name": "Hueneme Power Plant squid zone",
+        "notes": "Big area",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Port Hueneme / Deep Hole"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.175,
+          34.06
+        ]
+      },
+      "properties": {
+        "name": "Hueneme Fingers Area",
+        "notes": "Big area",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Port Hueneme / Deep Hole"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.025,
+          34.0
+        ]
+      },
+      "properties": {
+        "name": "Short Banks",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Port Hueneme / Deep Hole"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.01166666666667,
+          34.053333333333335
+        ]
+      },
+      "properties": {
+        "name": "Deep Hole squid zone",
+        "notes": "Big area",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Port Hueneme / Deep Hole"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.97383333333333,
+          34.04566666666667
+        ]
+      },
+      "properties": {
+        "name": "Deep Hole",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Port Hueneme / Deep Hole"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.957,
+          34.04333333333334
+        ]
+      },
+      "properties": {
+        "name": "Harrison's Reef",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Port Hueneme / Deep Hole"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.96,
+          34.031666666666666
+        ]
+      },
+      "properties": {
+        "name": "Deep Hole / County Line squid zone",
+        "notes": "Big area",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Port Hueneme / Deep Hole"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.945,
+          34.04183333333334
+        ]
+      },
+      "properties": {
+        "name": "County Line",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Port Hueneme / Deep Hole"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.93241666666667,
+          34.04116666666667
+        ]
+      },
+      "properties": {
+        "name": "Leo Carrillo",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Port Hueneme / Deep Hole"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.89183333333334,
+          34.03483333333333
+        ]
+      },
+      "properties": {
+        "name": "Decker Canyon",
+        "notes": "Stay W of SMCA at 118 53.000",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Port Hueneme / Deep Hole"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.89,
+          34.015
+        ]
+      },
+      "properties": {
+        "name": "Decker Canyon hardbottom 30fa",
+        "notes": "Stay W of SMCA at 118 53.000",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Port Hueneme / Deep Hole"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.35566666666666,
+          34.053666666666665
+        ]
+      },
+      "properties": {
+        "name": "Cuyler Harbor",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "San Miguel Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.39633333333333,
+          34.105
+        ]
+      },
+      "properties": {
+        "name": "Wilson Rock",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "San Miguel Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.417,
+          34.05866666666667
+        ]
+      },
+      "properties": {
+        "name": "Oil Point",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "San Miguel Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.435,
+          34.074
+        ]
+      },
+      "properties": {
+        "name": "Oil Spring",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "San Miguel Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.43333333333334,
+          34.06666666666667
+        ]
+      },
+      "properties": {
+        "name": "Westcott Shoal",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "San Miguel Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.43516666666666,
+          34.05616666666667
+        ]
+      },
+      "properties": {
+        "name": "Castle Rock",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "San Miguel Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.46783333333333,
+          34.02166666666667
+        ]
+      },
+      "properties": {
+        "name": "Whistle Buoy Reef / 11 Fathom Spot",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "San Miguel Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.38791666666667,
+          34.016666666666666
+        ]
+      },
+      "properties": {
+        "name": "Wycoff Ledge",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "San Miguel Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.356,
+          34.008
+        ]
+      },
+      "properties": {
+        "name": "Crook Point",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "San Miguel Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.0625,
+          34.08583333333333
+        ]
+      },
+      "properties": {
+        "name": "Carrington Point rockfish 1",
+        "notes": "Stay N of MPA at 34 04.000",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Rosa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.09433333333334,
+          34.0555
+        ]
+      },
+      "properties": {
+        "name": "Carrington Point rockfish 2",
+        "notes": "Stay W of MPA at 120 05.200",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Rosa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.08833333333334,
+          34.04
+        ]
+      },
+      "properties": {
+        "name": "Carrington Point squid zone",
+        "notes": "Stay W of MPA at 120 05.200",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Rosa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.10733333333333,
+          34.0305
+        ]
+      },
+      "properties": {
+        "name": "Rhodes Reef",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Rosa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.14666666666666,
+          34.034166666666664
+        ]
+      },
+      "properties": {
+        "name": "Brockway Point",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Rosa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.23466666666667,
+          34.02633333333333
+        ]
+      },
+      "properties": {
+        "name": "Talcott Shoals",
+        "notes": "Big area",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Rosa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.236,
+          33.9675
+        ]
+      },
+      "properties": {
+        "name": "Santa Rosa Reef",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Rosa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.21483333333333,
+          33.94883333333333
+        ]
+      },
+      "properties": {
+        "name": "Bee Rock",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Rosa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.1945,
+          33.923
+        ]
+      },
+      "properties": {
+        "name": "Cluster Point",
+        "notes": "Stay W of MPA at 120 10.000",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Rosa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.09933333333333,
+          33.898833333333336
+        ]
+      },
+      "properties": {
+        "name": "Johnson's Lee",
+        "notes": "Stay E of MPA at 120 06.500",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Rosa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.04416666666667,
+          33.912333333333336
+        ]
+      },
+      "properties": {
+        "name": "Ford Point",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Rosa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.00166666666667,
+          33.931666666666665
+        ]
+      },
+      "properties": {
+        "name": "Eagle's Nest squid zone",
+        "notes": "Big area",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Rosa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.97533333333334,
+          33.92133333333334
+        ]
+      },
+      "properties": {
+        "name": "East End Pinnacles",
+        "notes": "Big area",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Rosa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.96583333333334,
+          33.94083333333333
+        ]
+      },
+      "properties": {
+        "name": "East Point",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Rosa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.0,
+          34.00333333333333
+        ]
+      },
+      "properties": {
+        "name": "Becher's Bay squid zone",
+        "notes": "Big area",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Rosa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.51883333333333,
+          34.034
+        ]
+      },
+      "properties": {
+        "name": "San Pedro Point",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Front Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.61516666666667,
+          34.0325
+        ]
+      },
+      "properties": {
+        "name": "Chinese Harbor - The Slide",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Front Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.68333333333334,
+          34.02483333333333
+        ]
+      },
+      "properties": {
+        "name": "Prisoner's Harbor",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Front Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.70183333333334,
+          34.034166666666664
+        ]
+      },
+      "properties": {
+        "name": "Pelican Bay",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Front Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.73483333333333,
+          34.0485
+        ]
+      },
+      "properties": {
+        "name": "Platt's Harbor",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Front Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.7525,
+          34.055083333333336
+        ]
+      },
+      "properties": {
+        "name": "Fry's Harbor",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Front Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.79983333333334,
+          34.0575
+        ]
+      },
+      "properties": {
+        "name": "Arch Rock",
+        "notes": "Caution - boilers",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Front Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.81816666666667,
+          34.054833333333335
+        ]
+      },
+      "properties": {
+        "name": "Cueva Valdez",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Front Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.81333333333333,
+          34.0585
+        ]
+      },
+      "properties": {
+        "name": "Cueva Valdez squid zone",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Front Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.919,
+          34.07933333333333
+        ]
+      },
+      "properties": {
+        "name": "West Point",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Front Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.92675,
+          34.06466666666667
+        ]
+      },
+      "properties": {
+        "name": "West Cove",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Front Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.93583333333333,
+          34.0595
+        ]
+      },
+      "properties": {
+        "name": "Frasier Point",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Front Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.94666666666667,
+          34.05833333333333
+        ]
+      },
+      "properties": {
+        "name": "Potato Patch",
+        "notes": "Caution: strong currents",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Front Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.9575,
+          34.062666666666665
+        ]
+      },
+      "properties": {
+        "name": "West End Ridge rockfish",
+        "notes": "General area",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Front Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.53666666666666,
+          34.02166666666667
+        ]
+      },
+      "properties": {
+        "name": "Smugglers Cove",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Back Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.5425,
+          33.99
+        ]
+      },
+      "properties": {
+        "name": "Yellowbanks Reef",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Back Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.63841666666667,
+          33.98425
+        ]
+      },
+      "properties": {
+        "name": "Yellow Bluff",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Back Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.66275,
+          33.983916666666666
+        ]
+      },
+      "properties": {
+        "name": "Valley Anchorage",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Back Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.665,
+          33.9775
+        ]
+      },
+      "properties": {
+        "name": "Blue Banks",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Back Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.69858333333333,
+          33.969166666666666
+        ]
+      },
+      "properties": {
+        "name": "Albert's Anchorage",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Back Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.72108333333334,
+          33.958
+        ]
+      },
+      "properties": {
+        "name": "Bowen Point",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Back Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.7525,
+          33.958416666666665
+        ]
+      },
+      "properties": {
+        "name": "Willows Anchorage",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Back Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.882,
+          34.02466666666667
+        ]
+      },
+      "properties": {
+        "name": "Christy Beach",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Back Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.9,
+          34.03
+        ]
+      },
+      "properties": {
+        "name": "Christy Beach squid zone",
+        "notes": "Big area",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Back Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.88933333333334,
+          34.03675
+        ]
+      },
+      "properties": {
+        "name": "Black Point",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Back Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.91666666666667,
+          34.05416666666667
+        ]
+      },
+      "properties": {
+        "name": "Forney's Cove",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Back Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.93875,
+          34.04266666666667
+        ]
+      },
+      "properties": {
+        "name": "Forney's Cove squid zone",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Santa Cruz Island - Back Side"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.3535,
+          34.01733333333333
+        ]
+      },
+      "properties": {
+        "name": "The Arch",
+        "notes": "Stay E of MPA at 119 21.400",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Anacapa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.38166666666666,
+          34.005833333333335
+        ]
+      },
+      "properties": {
+        "name": "East Fish Camp",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Anacapa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.423,
+          34.00266666666667
+        ]
+      },
+      "properties": {
+        "name": "Cat Rock",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Anacapa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.345,
+          34.020833333333336
+        ]
+      },
+      "properties": {
+        "name": "East Anacapa Reef rockfish 1",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Anacapa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.33066666666667,
+          34.020833333333336
+        ]
+      },
+      "properties": {
+        "name": "East Anacapa Reef rockfish 2",
+        "notes": "",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Anacapa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.49166666666666,
+          34.025
+        ]
+      },
+      "properties": {
+        "name": "The Gap",
+        "notes": "General area",
+        "section": "2. Ventura to Channel Islands",
+        "subsection": "Anacapa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.78466666666667,
+          34.00383333333333
+        ]
+      },
+      "properties": {
+        "name": "Big Kelp Reef (BKR)",
+        "notes": "Stay E of MPA at 118 47.260",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.683,
+          34.02733333333333
+        ]
+      },
+      "properties": {
+        "name": "Malibu Point",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.65055,
+          34.03026666666667
+        ]
+      },
+      "properties": {
+        "name": "Malibu Artificial Reef Center",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.55666666666667,
+          34.02325
+        ]
+      },
+      "properties": {
+        "name": "Getty Reef",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5325,
+          34.02721666666667
+        ]
+      },
+      "properties": {
+        "name": "Topanga Artificial Reef",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5425,
+          34.01305
+        ]
+      },
+      "properties": {
+        "name": "SM Bay Artificial Reef Center",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.52971666666667,
+          34.009433333333334
+        ]
+      },
+      "properties": {
+        "name": "SM Artificial Reef Center",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.52033333333333,
+          33.996833333333335
+        ]
+      },
+      "properties": {
+        "name": "Star of Scotland Shipwreck",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4875,
+          33.9925
+        ]
+      },
+      "properties": {
+        "name": "Twin Towers",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.503,
+          33.987
+        ]
+      },
+      "properties": {
+        "name": "Ocean Park Reef",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.49333333333334,
+          33.97833333333333
+        ]
+      },
+      "properties": {
+        "name": "Venice Reef",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.48638333333334,
+          33.968333333333334
+        ]
+      },
+      "properties": {
+        "name": "MDR Artificial Reef 2 Center",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4861,
+          33.965
+        ]
+      },
+      "properties": {
+        "name": "MDR Artificial Reef 1 Center",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.45116666666667,
+          33.937333333333335
+        ]
+      },
+      "properties": {
+        "name": "Twin Roads",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.45166666666667,
+          33.922
+        ]
+      },
+      "properties": {
+        "name": "El Segundo Pipe",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44433333333333,
+          33.92033333333333
+        ]
+      },
+      "properties": {
+        "name": "Double Bubble",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.43333333333334,
+          33.88
+        ]
+      },
+      "properties": {
+        "name": "Manhattan Hardbottom",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4205,
+          33.86816666666667
+        ]
+      },
+      "properties": {
+        "name": "Hermosa Hardbottom",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.41333333333333,
+          33.8536
+        ]
+      },
+      "properties": {
+        "name": "Hermosa Beach AR Center",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40888333333334,
+          33.83721666666667
+        ]
+      },
+      "properties": {
+        "name": "Redondo Beach AR Center",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.41471666666666,
+          33.8236
+        ]
+      },
+      "properties": {
+        "name": "Palawan Wreck Artificial Reef",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Malibu / Santa Monica Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.56666666666666,
+          33.954166666666666
+        ]
+      },
+      "properties": {
+        "name": "Out Front Spot",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "MDR Short Banks Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.55283333333334,
+          33.916
+        ]
+      },
+      "properties": {
+        "name": "Short Bank",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "MDR Short Banks Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.60783333333333,
+          33.9
+        ]
+      },
+      "properties": {
+        "name": "Northwest South Bank",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "MDR Short Banks Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.58116666666666,
+          33.89833333333333
+        ]
+      },
+      "properties": {
+        "name": "South Bank Bumps",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "MDR Short Banks Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.594,
+          33.892
+        ]
+      },
+      "properties": {
+        "name": "South Bank West",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "MDR Short Banks Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.59401666666666,
+          33.890966666666664
+        ]
+      },
+      "properties": {
+        "name": "South Bank",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "MDR Short Banks Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.61866666666667,
+          33.8805
+        ]
+      },
+      "properties": {
+        "name": "South Bank Outside Edge",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "MDR Short Banks Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5635,
+          33.88333333333333
+        ]
+      },
+      "properties": {
+        "name": "South Bank 33 Fathoms",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "MDR Short Banks Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5355,
+          33.881166666666665
+        ]
+      },
+      "properties": {
+        "name": "Inside South Bank Pinnacle 26fa",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "MDR Short Banks Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.525,
+          33.88583333333333
+        ]
+      },
+      "properties": {
+        "name": "Sculpin Hardbottom Area",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "MDR Short Banks Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5825,
+          33.86783333333333
+        ]
+      },
+      "properties": {
+        "name": "SW Bank 40 Fathoms",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "MDR Short Banks Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.50733333333334,
+          33.865833333333335
+        ]
+      },
+      "properties": {
+        "name": "Inside SW Bank 33 Fathoms",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "MDR Short Banks Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.60916666666667,
+          33.853833333333334
+        ]
+      },
+      "properties": {
+        "name": "Volcanic Reef NW Spot",
+        "notes": "Too deep",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "MDR Short Banks Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.59933333333333,
+          33.837833333333336
+        ]
+      },
+      "properties": {
+        "name": "Volcanic Reef",
+        "notes": "Too deep",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "MDR Short Banks Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5675,
+          33.845166666666664
+        ]
+      },
+      "properties": {
+        "name": "Volcanic Reef East",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "MDR Short Banks Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.43666666666667,
+          33.834
+        ]
+      },
+      "properties": {
+        "name": "Redondo Canyon West Wall",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Redondo Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.45583333333333,
+          33.796683333333334
+        ]
+      },
+      "properties": {
+        "name": "37 Fathom Spot",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Redondo Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.49033333333334,
+          33.79183333333334
+        ]
+      },
+      "properties": {
+        "name": "36 Fathom Pinnacle",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Redondo Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.49033333333334,
+          33.78783333333333
+        ]
+      },
+      "properties": {
+        "name": "47 Fathom Ridge",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Redondo Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.46666666666667,
+          33.780833333333334
+        ]
+      },
+      "properties": {
+        "name": "40 Fathom Curve",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Redondo Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40333333333334,
+          33.8055
+        ]
+      },
+      "properties": {
+        "name": "Malaga Cove",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Palos Verdes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.41083333333333,
+          33.79708333333333
+        ]
+      },
+      "properties": {
+        "name": "Flat Rock",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Palos Verdes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.432,
+          33.78516666666667
+        ]
+      },
+      "properties": {
+        "name": "Bay Junk",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Palos Verdes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.42966666666666,
+          33.777
+        ]
+      },
+      "properties": {
+        "name": "Rocky Point Pinnacle 25ft",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Palos Verdes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.43533333333333,
+          33.772166666666664
+        ]
+      },
+      "properties": {
+        "name": "Seabass Rock 75ft",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Palos Verdes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.43683333333334,
+          33.771
+        ]
+      },
+      "properties": {
+        "name": "Rocky Point 85ft",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Palos Verdes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.43866666666666,
+          33.770833333333336
+        ]
+      },
+      "properties": {
+        "name": "18-20 Fathom Spot Rockfish",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Palos Verdes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.428,
+          33.7665
+        ]
+      },
+      "properties": {
+        "name": "Resort Point",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Palos Verdes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.36208333333333,
+          33.733666666666664
+        ]
+      },
+      "properties": {
+        "name": "Portuguese Bend",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Palos Verdes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3535,
+          33.72416666666667
+        ]
+      },
+      "properties": {
+        "name": "Portuguese Reef",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Palos Verdes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.32383333333334,
+          33.712666666666664
+        ]
+      },
+      "properties": {
+        "name": "Royal Palms",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Palos Verdes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.32416666666667,
+          33.705
+        ]
+      },
+      "properties": {
+        "name": "Whites Point Pipe",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Palos Verdes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.318,
+          33.70933333333333
+        ]
+      },
+      "properties": {
+        "name": "Whites Point",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Palos Verdes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2905,
+          33.700833333333335
+        ]
+      },
+      "properties": {
+        "name": "Pt. Fermin Reef 65ft",
+        "notes": "",
+        "section": "3. Santa Monica Bay to Palos Verdes",
+        "subsection": "Palos Verdes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29683333333334,
+          33.665
+        ]
+      },
+      "properties": {
+        "name": "Watson's Reef",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "LA Harbor / Horseshoe Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28033333333333,
+          33.66416666666667
+        ]
+      },
+      "properties": {
+        "name": "Finger Reef",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "LA Harbor / Horseshoe Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.27183333333333,
+          33.64666666666667
+        ]
+      },
+      "properties": {
+        "name": "Potters Reef",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "LA Harbor / Horseshoe Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.27116666666667,
+          33.5965
+        ]
+      },
+      "properties": {
+        "name": "Peterson's Pinnacles",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "LA Harbor / Horseshoe Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.22233333333334,
+          33.666666666666664
+        ]
+      },
+      "properties": {
+        "name": "Horseshoe North",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "LA Harbor / Horseshoe Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.225,
+          33.6645
+        ]
+      },
+      "properties": {
+        "name": "Horseshoe South",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "LA Harbor / Horseshoe Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2255,
+          33.662
+        ]
+      },
+      "properties": {
+        "name": "Olympic Rock",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "LA Harbor / Horseshoe Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.22883333333333,
+          33.65416666666667
+        ]
+      },
+      "properties": {
+        "name": "Bull Kelp",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "LA Harbor / Horseshoe Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.202,
+          33.658833333333334
+        ]
+      },
+      "properties": {
+        "name": "Inside Rock",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "LA Harbor / Horseshoe Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.19833333333334,
+          33.655833333333334
+        ]
+      },
+      "properties": {
+        "name": "Outside Rock",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "LA Harbor / Horseshoe Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2045,
+          33.645
+        ]
+      },
+      "properties": {
+        "name": "East Horseshoe",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "LA Harbor / Horseshoe Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.21533333333333,
+          33.6405
+        ]
+      },
+      "properties": {
+        "name": "Jackpot Rock",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "LA Harbor / Horseshoe Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1965,
+          33.64
+        ]
+      },
+      "properties": {
+        "name": "105 Spot",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "LA Harbor / Horseshoe Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.21333333333334,
+          33.57266666666666
+        ]
+      },
+      "properties": {
+        "name": "Sculpin Hole",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Outer Rigs Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1625,
+          33.593666666666664
+        ]
+      },
+      "properties": {
+        "name": "150 Spot",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Outer Rigs Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1315,
+          33.59016666666667
+        ]
+      },
+      "properties": {
+        "name": "Double Rigs Reef",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Outer Rigs Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.146,
+          33.57083333333333
+        ]
+      },
+      "properties": {
+        "name": "Sculpin Spot",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Outer Rigs Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.13866666666667,
+          33.56883333333333
+        ]
+      },
+      "properties": {
+        "name": "Southeast Bank",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Outer Rigs Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.14533333333334,
+          33.6955
+        ]
+      },
+      "properties": {
+        "name": "Gambler Wreck",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Huntington Flats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.12883333333333,
+          33.684333333333335
+        ]
+      },
+      "properties": {
+        "name": "Sand Bass Junction",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Huntington Flats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1,
+          33.695
+        ]
+      },
+      "properties": {
+        "name": "West Huntington Flats",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Huntington Flats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.11566666666667,
+          33.68033333333333
+        ]
+      },
+      "properties": {
+        "name": "Sunset Wreck",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Huntington Flats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.10133333333333,
+          33.6505
+        ]
+      },
+      "properties": {
+        "name": "Izor's Reef (Bolsa Chica AR)",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Huntington Flats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.04883333333333,
+          33.66566666666667
+        ]
+      },
+      "properties": {
+        "name": "1/4 Acre Spot",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Huntington Flats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0375,
+          33.647
+        ]
+      },
+      "properties": {
+        "name": "Huntington Flats",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Huntington Flats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0425,
+          33.661
+        ]
+      },
+      "properties": {
+        "name": "Platform Emmy",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Huntington Flats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.04366666666667,
+          33.64683333333333
+        ]
+      },
+      "properties": {
+        "name": "Ribbon Kelp",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Huntington Flats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.03916666666667,
+          33.643
+        ]
+      },
+      "properties": {
+        "name": "Barge Rock",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Huntington Flats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.07366666666667,
+          33.620333333333335
+        ]
+      },
+      "properties": {
+        "name": "108 Spot West",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Huntington Flats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.06066666666666,
+          33.6225
+        ]
+      },
+      "properties": {
+        "name": "108 Spot East",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Huntington Flats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.99783333333333,
+          33.62166666666667
+        ]
+      },
+      "properties": {
+        "name": "Power Plant / HB Artificial Reef",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Huntington Flats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.96333333333334,
+          33.60333333333333
+        ]
+      },
+      "properties": {
+        "name": "Newport Artificial Reef Center",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Huntington Flats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.95216666666667,
+          33.61333333333333
+        ]
+      },
+      "properties": {
+        "name": "Newport Hardbottom West",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Huntington Flats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.93966666666667,
+          33.608333333333334
+        ]
+      },
+      "properties": {
+        "name": "Newport Hardbottom East",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Huntington Flats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.93316666666666,
+          33.597
+        ]
+      },
+      "properties": {
+        "name": "Newport Canyon 50 Fathom Curve",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Huntington Flats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.97266666666667,
+          33.6145
+        ]
+      },
+      "properties": {
+        "name": "Bend in Pipe",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Santa Ana River Pipe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.97383333333333,
+          33.61066666666667
+        ]
+      },
+      "properties": {
+        "name": "New Pipe",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Santa Ana River Pipe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.97633333333333,
+          33.6105
+        ]
+      },
+      "properties": {
+        "name": "End of Old Pipe",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Santa Ana River Pipe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.97716666666666,
+          33.604
+        ]
+      },
+      "properties": {
+        "name": "New Pipe 2",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Santa Ana River Pipe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.99883333333334,
+          33.574
+        ]
+      },
+      "properties": {
+        "name": "180' Section Sculpin Hole",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Santa Ana River Pipe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.85616666666667,
+          33.57516666666667
+        ]
+      },
+      "properties": {
+        "name": "Pelican Point / Number 1 Spot",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Crystal Cove Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.8385,
+          33.56366666666667
+        ]
+      },
+      "properties": {
+        "name": "Crystal Cove / Number 2 Spot",
+        "notes": "",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Crystal Cove Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.82183333333333,
+          33.55266666666667
+        ]
+      },
+      "properties": {
+        "name": "Abalone Point",
+        "notes": "Stay N/W of MPA at 33 33.233 x 117 49.200",
+        "section": "4. Long Beach to Newport",
+        "subsection": "Crystal Cove Area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.785,
+          33.49166666666667
+        ]
+      },
+      "properties": {
+        "name": "The Hospital 100 Fathom Curve",
+        "notes": "Stay S of MPA at 33 30.050",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Dana Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.73366666666666,
+          33.48283333333333
+        ]
+      },
+      "properties": {
+        "name": "Monarch Boilers",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Dana Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.734,
+          33.476083333333335
+        ]
+      },
+      "properties": {
+        "name": "Salt Creek",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Dana Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.723,
+          33.455333333333336
+        ]
+      },
+      "properties": {
+        "name": "Dana Point Kelp - Red Buoy",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Dana Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.69016666666667,
+          33.445166666666665
+        ]
+      },
+      "properties": {
+        "name": "Barber Poles",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Dana Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.63566666666667,
+          33.4075
+        ]
+      },
+      "properties": {
+        "name": "San Clemente Kelp",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Dana Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.62,
+          33.39816666666667
+        ]
+      },
+      "properties": {
+        "name": "San Clemente Artificial Reef",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Dana Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.61333333333333,
+          33.382666666666665
+        ]
+      },
+      "properties": {
+        "name": "San Mateo Point",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Dana Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.60466666666667,
+          33.37983333333333
+        ]
+      },
+      "properties": {
+        "name": "Trestles",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Dana Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.5675,
+          33.348
+        ]
+      },
+      "properties": {
+        "name": "San Onofre Kelp",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Oceanside / North County"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.56916666666666,
+          33.28816666666667
+        ]
+      },
+      "properties": {
+        "name": "Box Canyon rockfish area",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Oceanside / North County"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.49125,
+          33.28358333333333
+        ]
+      },
+      "properties": {
+        "name": "Barn Kelp",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Oceanside / North County"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.455,
+          33.23833333333334
+        ]
+      },
+      "properties": {
+        "name": "Clam Beds",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Oceanside / North County"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.43783333333333,
+          33.24
+        ]
+      },
+      "properties": {
+        "name": "Golf Ball",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Oceanside / North County"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.37833333333333,
+          33.172333333333334
+        ]
+      },
+      "properties": {
+        "name": "Buccaneer Pipe",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Oceanside / North County"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.34766666666667,
+          33.13433333333333
+        ]
+      },
+      "properties": {
+        "name": "Encina Powerplant Pipe",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Oceanside / North County"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.34066666666666,
+          33.124833333333335
+        ]
+      },
+      "properties": {
+        "name": "Terramar Kelp",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Oceanside / North County"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.35666666666667,
+          33.125
+        ]
+      },
+      "properties": {
+        "name": "Carlsbad Canyon",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Oceanside / North County"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.335,
+          33.112833333333334
+        ]
+      },
+      "properties": {
+        "name": "Anderson Pipe",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Oceanside / North County"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.31971666666666,
+          33.08725
+        ]
+      },
+      "properties": {
+        "name": "Ponto",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Oceanside / North County"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.34333333333333,
+          33.068333333333335
+        ]
+      },
+      "properties": {
+        "name": "Leucadia rockfish area",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Oceanside / North County"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3125,
+          33.062916666666666
+        ]
+      },
+      "properties": {
+        "name": "Beacons",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Oceanside / North County"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.34866666666667,
+          33.052166666666665
+        ]
+      },
+      "properties": {
+        "name": "Encinitas rockfish / Devil's Rock N",
+        "notes": "Stay N of SMCA at 33 03.000",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Oceanside / North County"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.28833333333333,
+          32.99016666666667
+        ]
+      },
+      "properties": {
+        "name": "Solana Beach Kelp",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Oceanside / North County"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.27905,
+          32.9594
+        ]
+      },
+      "properties": {
+        "name": "Powerhouse Kelp",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Oceanside / North County"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.29968333333333,
+          32.953183333333335
+        ]
+      },
+      "properties": {
+        "name": "Del Mar rockfish area",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Oceanside / North County"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.26258333333334,
+          32.91258333333333
+        ]
+      },
+      "properties": {
+        "name": "Flat Rock",
+        "notes": "",
+        "section": "5. Dana Point to Del Mar",
+        "subsection": "Oceanside / North County"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.31666666666666,
+          32.875
+        ]
+      },
+      "properties": {
+        "name": "La Jolla Canyon Shelf rockfish",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "La Jolla"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.32083333333334,
+          32.855
+        ]
+      },
+      "properties": {
+        "name": "La Jolla Shelf hardbottom",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "La Jolla"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.277,
+          32.855666666666664
+        ]
+      },
+      "properties": {
+        "name": "The Cove",
+        "notes": "Stay W of MPA at 117 16.400",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "La Jolla"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.28183333333334,
+          32.85816666666667
+        ]
+      },
+      "properties": {
+        "name": "The Bump",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "La Jolla"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.29366666666667,
+          32.85366666666667
+        ]
+      },
+      "properties": {
+        "name": "The Half",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "La Jolla"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.30766666666666,
+          32.843833333333336
+        ]
+      },
+      "properties": {
+        "name": "Northwest Corner",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "La Jolla"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3325,
+          32.84583333333333
+        ]
+      },
+      "properties": {
+        "name": "32 Fathom Spot rockfish",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "La Jolla"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.29525,
+          32.83625
+        ]
+      },
+      "properties": {
+        "name": "Marine Street",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "La Jolla"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2918,
+          32.8286
+        ]
+      },
+      "properties": {
+        "name": "Windansea",
+        "notes": "Stay N of MPA at 32 49.573",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "La Jolla"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.27633333333333,
+          32.793
+        ]
+      },
+      "properties": {
+        "name": "Crystal Pier",
+        "notes": "Stay S of MPA at 32 47.945",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "La Jolla"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.34816666666667,
+          32.7785
+        ]
+      },
+      "properties": {
+        "name": "The 270 rockfish area",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "La Jolla"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3695,
+          32.76616666666666
+        ]
+      },
+      "properties": {
+        "name": "Widow Rock",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "La Jolla"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.30766666666666,
+          32.7595
+        ]
+      },
+      "properties": {
+        "name": "The Airplane rockfish area",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "La Jolla"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.27766666666666,
+          32.72983333333333
+        ]
+      },
+      "properties": {
+        "name": "Hill Street",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "Point Loma"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.27716666666667,
+          32.71966666666667
+        ]
+      },
+      "properties": {
+        "name": "College Area / Sunset Cliffs",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "Point Loma"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.279,
+          32.710166666666666
+        ]
+      },
+      "properties": {
+        "name": "Green Tank",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "Point Loma"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.27183333333333,
+          32.69083333333333
+        ]
+      },
+      "properties": {
+        "name": "The Lab",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "Point Loma"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2665,
+          32.68566666666667
+        ]
+      },
+      "properties": {
+        "name": "New Hope Rock",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "Point Loma"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.26933333333334,
+          32.68116666666667
+        ]
+      },
+      "properties": {
+        "name": "5 Tanks",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "Point Loma"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.28333333333333,
+          32.6725
+        ]
+      },
+      "properties": {
+        "name": "Point Loma Pipe",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "Point Loma"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.262,
+          32.6525
+        ]
+      },
+      "properties": {
+        "name": "The Dropoff",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "Point Loma"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.24166666666666,
+          32.6375
+        ]
+      },
+      "properties": {
+        "name": "Buoy 3 Hardbottom",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "Point Loma"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.24533333333333,
+          32.6245
+        ]
+      },
+      "properties": {
+        "name": "Whistler Buoy",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "Point Loma"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.22333333333333,
+          32.67166666666667
+        ]
+      },
+      "properties": {
+        "name": "Zuniga Jetty",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "Point Loma"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.188,
+          32.66833333333334
+        ]
+      },
+      "properties": {
+        "name": "Hotel Del Hardbottom",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "Point Loma"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.16,
+          32.575
+        ]
+      },
+      "properties": {
+        "name": "Imperial Beach Kelp",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "Imperial Beach"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.15,
+          32.55
+        ]
+      },
+      "properties": {
+        "name": "Imperial Beach Kelp South End",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "Imperial Beach"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2,
+          32.56666666666667
+        ]
+      },
+      "properties": {
+        "name": "Imperial Beach Flats",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "Imperial Beach"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.18,
+          32.538333333333334
+        ]
+      },
+      "properties": {
+        "name": "Imperial Beach Pipe",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "Imperial Beach"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.24808333333333,
+          32.544533333333334
+        ]
+      },
+      "properties": {
+        "name": "International Reef A",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "International Artificial Reefs"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.24833333333333,
+          32.544466666666665
+        ]
+      },
+      "properties": {
+        "name": "International Reef B",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "International Artificial Reefs"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.24721666666667,
+          32.54375
+        ]
+      },
+      "properties": {
+        "name": "International Reef C",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "International Artificial Reefs"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.24671666666667,
+          32.54411666666667
+        ]
+      },
+      "properties": {
+        "name": "International Reef D",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "International Artificial Reefs"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.24736666666666,
+          32.54528333333333
+        ]
+      },
+      "properties": {
+        "name": "International Reef E",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "International Artificial Reefs"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.24638333333333,
+          32.54278333333333
+        ]
+      },
+      "properties": {
+        "name": "International Reef F",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "International Artificial Reefs"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2465,
+          32.541583333333335
+        ]
+      },
+      "properties": {
+        "name": "International Reef Missile Tower",
+        "notes": "",
+        "section": "6. La Jolla to Mexico",
+        "subsection": "International Artificial Reefs"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3,
+          32.4475
+        ]
+      },
+      "properties": {
+        "name": "Pukey Point",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Coronado Islands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.26583333333333,
+          32.430166666666665
+        ]
+      },
+      "properties": {
+        "name": "Middle Grounds",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Coronado Islands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.23133333333334,
+          32.413333333333334
+        ]
+      },
+      "properties": {
+        "name": "Ribbon Kelp",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Coronado Islands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.24283333333334,
+          32.38816666666666
+        ]
+      },
+      "properties": {
+        "name": "Lighthouse",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Coronado Islands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.22525,
+          32.382333333333335
+        ]
+      },
+      "properties": {
+        "name": "5-Minute Kelp",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Coronado Islands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.221,
+          32.36666666666667
+        ]
+      },
+      "properties": {
+        "name": "South Kelp Ridge",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Coronado Islands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.16716666666666,
+          32.29366666666667
+        ]
+      },
+      "properties": {
+        "name": "Rockpile",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Coronado Islands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.34166666666667,
+          32.541666666666664
+        ]
+      },
+      "properties": {
+        "name": "Lower 9 Mile Bank",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Rockfish Areas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.29166666666667,
+          32.505
+        ]
+      },
+      "properties": {
+        "name": "Coronado Canyon",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Rockfish Areas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3,
+          32.45633333333333
+        ]
+      },
+      "properties": {
+        "name": "North of North Island rockfish",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Rockfish Areas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.235,
+          32.45
+        ]
+      },
+      "properties": {
+        "name": "East of Pukey Point YT & Rockfish",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Rockfish Areas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.14333333333333,
+          32.525
+        ]
+      },
+      "properties": {
+        "name": "Bull Ring",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Northern Baja"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.10833333333333,
+          32.35
+        ]
+      },
+      "properties": {
+        "name": "Rosarito Flats",
+        "notes": "Big area",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Northern Baja"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.0315,
+          32.26466666666666
+        ]
+      },
+      "properties": {
+        "name": "Punta Descanso",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Northern Baja"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.0146,
+          32.24726666666667
+        ]
+      },
+      "properties": {
+        "name": "Descanso rockfish 1",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Northern Baja"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.97603333333333,
+          32.24078333333333
+        ]
+      },
+      "properties": {
+        "name": "Descanso rockfish 2",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Northern Baja"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.96356666666667,
+          32.22275
+        ]
+      },
+      "properties": {
+        "name": "Sugarloaf Rock",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Northern Baja"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.91333333333333,
+          32.159666666666666
+        ]
+      },
+      "properties": {
+        "name": "Punta Mesquite",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Northern Baja"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.9025,
+          32.141
+        ]
+      },
+      "properties": {
+        "name": "La Fonda",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Northern Baja"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.8775,
+          32.00833333333333
+        ]
+      },
+      "properties": {
+        "name": "Bajamar",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Northern Baja"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.8335,
+          31.973083333333335
+        ]
+      },
+      "properties": {
+        "name": "Punta Salsipuedes",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Northern Baja"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.1745,
+          32.272666666666666
+        ]
+      },
+      "properties": {
+        "name": "Upper Finger Bank rockfish 180ft",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Finger Bank Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.171,
+          32.25216666666667
+        ]
+      },
+      "properties": {
+        "name": "Upper Finger Bank rockfish 240ft",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Finger Bank Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.1825,
+          32.25183333333333
+        ]
+      },
+      "properties": {
+        "name": "Upper Finger Bank rockfish 300ft",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Finger Bank Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.18883333333333,
+          32.24133333333333
+        ]
+      },
+      "properties": {
+        "name": "Upper Finger Bank 71 Fathom Spot",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Finger Bank Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.11833333333334,
+          32.233333333333334
+        ]
+      },
+      "properties": {
+        "name": "Upper Finger Bank 27 Fathom Spot",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Finger Bank Rockfish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.74966666666667,
+          31.901833333333332
+        ]
+      },
+      "properties": {
+        "name": "Punta San Miguel",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Ensenada"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.68766666666667,
+          31.86975
+        ]
+      },
+      "properties": {
+        "name": "Punta Morro",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Ensenada"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.80166666666666,
+          31.85333333333333
+        ]
+      },
+      "properties": {
+        "name": "San Miguel Reef",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Ensenada"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.7555,
+          31.757166666666667
+        ]
+      },
+      "properties": {
+        "name": "Punta Banda",
+        "notes": "Caution - boilers",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Ensenada"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.723,
+          31.724
+        ]
+      },
+      "properties": {
+        "name": "La Bufadora",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Punta Banda / Santo Tomas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.67333333333333,
+          31.684666666666665
+        ]
+      },
+      "properties": {
+        "name": "White Rock",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Punta Banda / Santo Tomas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.64883333333333,
+          31.6425
+        ]
+      },
+      "properties": {
+        "name": "El Retiro",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Punta Banda / Santo Tomas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.67566666666667,
+          31.618666666666666
+        ]
+      },
+      "properties": {
+        "name": "Billy's Bluff",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Punta Banda / Santo Tomas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.775,
+          31.616666666666667
+        ]
+      },
+      "properties": {
+        "name": "47 Fa. Spot",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Punta Banda / Santo Tomas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.81666666666666,
+          31.593333333333334
+        ]
+      },
+      "properties": {
+        "name": "48 Fa. Spot",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Punta Banda / Santo Tomas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.66333333333333,
+          31.586666666666666
+        ]
+      },
+      "properties": {
+        "name": "Bahia Soledad",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Punta Banda / Santo Tomas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.715,
+          31.581666666666667
+        ]
+      },
+      "properties": {
+        "name": "15 Fa Ridge",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Punta Banda / Santo Tomas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.69,
+          31.5545
+        ]
+      },
+      "properties": {
+        "name": "Punta Santo Tomas",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Punta Banda / Santo Tomas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.715,
+          31.55
+        ]
+      },
+      "properties": {
+        "name": "Isolete",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Punta Banda / Santo Tomas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.72,
+          31.508333333333333
+        ]
+      },
+      "properties": {
+        "name": "38 Fa. Spot",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Punta Banda / Santo Tomas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.71333333333334,
+          31.483333333333334
+        ]
+      },
+      "properties": {
+        "name": "33 Fa. Spot",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Punta Banda / Santo Tomas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.50333333333333,
+          30.89666666666667
+        ]
+      },
+      "properties": {
+        "name": "Colonet High Spot 28 Fathoms",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Colonet / San Quintin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.50583333333333,
+          30.843333333333334
+        ]
+      },
+      "properties": {
+        "name": "Colonet 41 Fathoms",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Colonet / San Quintin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.1025,
+          30.486333333333334
+        ]
+      },
+      "properties": {
+        "name": "San Martin Island Anchorage",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Colonet / San Quintin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.0985,
+          30.484333333333332
+        ]
+      },
+      "properties": {
+        "name": "San Martin Island Natural Jetty Kelp",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Colonet / San Quintin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.11666666666666,
+          30.438333333333333
+        ]
+      },
+      "properties": {
+        "name": "Roca Ben",
+        "notes": "Caution - shoals / boilers",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Colonet / San Quintin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.15166666666667,
+          30.426666666666666
+        ]
+      },
+      "properties": {
+        "name": "6.5 Fathom Spot",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Colonet / San Quintin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.08333333333333,
+          30.366666666666667
+        ]
+      },
+      "properties": {
+        "name": "15 Fathom Spot",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Colonet / San Quintin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.11166666666666,
+          30.335
+        ]
+      },
+      "properties": {
+        "name": "Breakers Reef",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Colonet / San Quintin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.81666666666666,
+          30.283333333333335
+        ]
+      },
+      "properties": {
+        "name": "Tranquillo Kelp",
+        "notes": "",
+        "section": "7. Coronado Islands to San Quintin",
+        "subsection": "Colonet / San Quintin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.02518333333333,
+          33.477716666666666
+        ]
+      },
+      "properties": {
+        "name": "Cave Canyon WSB zone",
+        "notes": "Stay N of MPA at 33 28.500",
+        "section": "8. So Cal Islands",
+        "subsection": "Santa Barbara Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.02923333333334,
+          33.482216666666666
+        ]
+      },
+      "properties": {
+        "name": "Landing Cove",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Santa Barbara Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.05016666666667,
+          33.485283333333335
+        ]
+      },
+      "properties": {
+        "name": "Webster Point",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Santa Barbara Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.06248333333333,
+          33.480983333333334
+        ]
+      },
+      "properties": {
+        "name": "Arch Reef",
+        "notes": "Caution - boilers in big swell",
+        "section": "8. So Cal Islands",
+        "subsection": "Santa Barbara Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.05243333333334,
+          33.47631666666667
+        ]
+      },
+      "properties": {
+        "name": "Caverns Area",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Santa Barbara Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.0441,
+          33.46703333333333
+        ]
+      },
+      "properties": {
+        "name": "Three Sisters",
+        "notes": "Caution - boilers",
+        "section": "8. So Cal Islands",
+        "subsection": "Santa Barbara Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.04553333333334,
+          33.462183333333336
+        ]
+      },
+      "properties": {
+        "name": "Sutil Island squid/yellowtail zone",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Santa Barbara Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.48855,
+          33.28125
+        ]
+      },
+      "properties": {
+        "name": "Blockhouse",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Nicolas Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.464,
+          33.26833333333333
+        ]
+      },
+      "properties": {
+        "name": "Airplane Rock",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Nicolas Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.43083333333334,
+          33.24166666666667
+        ]
+      },
+      "properties": {
+        "name": "East End squid grounds",
+        "notes": "Big area",
+        "section": "8. So Cal Islands",
+        "subsection": "San Nicolas Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.418,
+          33.2351
+        ]
+      },
+      "properties": {
+        "name": "Seabass Rock",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Nicolas Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.3974,
+          33.22365
+        ]
+      },
+      "properties": {
+        "name": "East End Buoy",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Nicolas Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.44718333333333,
+          33.21483333333333
+        ]
+      },
+      "properties": {
+        "name": "Daytona Beach",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Nicolas Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.44753333333334,
+          33.20806666666667
+        ]
+      },
+      "properties": {
+        "name": "Daytona WSB zone",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Nicolas Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.48715,
+          33.2172
+        ]
+      },
+      "properties": {
+        "name": "Dutch Harbor",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Nicolas Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.60533333333333,
+          33.4725
+        ]
+      },
+      "properties": {
+        "name": "Eagle Rock",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5975,
+          33.46666666666667
+        ]
+      },
+      "properties": {
+        "name": "West Cove",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.57815,
+          33.44725
+        ]
+      },
+      "properties": {
+        "name": "Iron Bound",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5747,
+          33.440133333333335
+        ]
+      },
+      "properties": {
+        "name": "Ribbon Rock",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.55931666666666,
+          33.43266666666667
+        ]
+      },
+      "properties": {
+        "name": "Whale Rock",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.53326666666666,
+          33.42835
+        ]
+      },
+      "properties": {
+        "name": "Cape Cortes",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.52413333333334,
+          33.42778333333333
+        ]
+      },
+      "properties": {
+        "name": "Lobster Bay",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.50833333333334,
+          33.4237
+        ]
+      },
+      "properties": {
+        "name": "Cat Harbor",
+        "notes": "Partial-take SMCA",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.48906666666667,
+          33.40115
+        ]
+      },
+      "properties": {
+        "name": "Pedestal Rock",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.47605,
+          33.38455
+        ]
+      },
+      "properties": {
+        "name": "Little Harbor",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.48878333333333,
+          33.37598333333333
+        ]
+      },
+      "properties": {
+        "name": "Sentinel Rock",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.49395,
+          33.358533333333334
+        ]
+      },
+      "properties": {
+        "name": "Ben Weston Point",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.51683333333334,
+          33.342666666666666
+        ]
+      },
+      "properties": {
+        "name": "Farnsworth Bank",
+        "notes": "Partial-take SMCA",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.46883333333334,
+          33.32833333333333
+        ]
+      },
+      "properties": {
+        "name": "China Point",
+        "notes": "Partial-take SMCA",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.41605,
+          33.314033333333334
+        ]
+      },
+      "properties": {
+        "name": "Salta Verde",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.38935,
+          33.31956666666667
+        ]
+      },
+      "properties": {
+        "name": "Silver Canyon",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.37383333333334,
+          33.31766666666667
+        ]
+      },
+      "properties": {
+        "name": "Palisades",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.35483333333333,
+          33.309
+        ]
+      },
+      "properties": {
+        "name": "3 V's",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.32833333333333,
+          33.295833333333334
+        ]
+      },
+      "properties": {
+        "name": "Church Rock",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.31471666666667,
+          33.30045
+        ]
+      },
+      "properties": {
+        "name": "East End Light",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30431666666667,
+          33.306583333333336
+        ]
+      },
+      "properties": {
+        "name": "Seal Rocks",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Backside (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.58938333333333,
+          33.47755
+        ]
+      },
+      "properties": {
+        "name": "Johnson Rock",
+        "notes": "Caution - Boiler Rocks",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5557,
+          33.47528333333333
+        ]
+      },
+      "properties": {
+        "name": "Stony Point",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.55071666666667,
+          33.476483333333334
+        ]
+      },
+      "properties": {
+        "name": "Parson's Landing",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5379,
+          33.47768333333333
+        ]
+      },
+      "properties": {
+        "name": "Arrow Point",
+        "notes": "Partial-take SMCA",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.52583333333334,
+          33.468666666666664
+        ]
+      },
+      "properties": {
+        "name": "Indian Rock",
+        "notes": "Partial-take SMCA",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.50658333333334,
+          33.46033333333333
+        ]
+      },
+      "properties": {
+        "name": "Eagle Reef Buoy",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.50121666666666,
+          33.453916666666665
+        ]
+      },
+      "properties": {
+        "name": "Lions Head",
+        "notes": "Partial-take SMCA",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4905,
+          33.462666666666664
+        ]
+      },
+      "properties": {
+        "name": "Ship Rock",
+        "notes": "Stay W of MPA at 118 29.300",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4908,
+          33.44781666666667
+        ]
+      },
+      "properties": {
+        "name": "Isthmus Reef",
+        "notes": "Caution - Shoals. Stay W of MPA",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.48883333333333,
+          33.452
+        ]
+      },
+      "properties": {
+        "name": "Bird Rock Reef",
+        "notes": "Stay W of MPA at 118 29.300",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44866666666667,
+          33.43333333333333
+        ]
+      },
+      "properties": {
+        "name": "Yellowtail Point",
+        "notes": "Stay E of MPA at 118 27.000",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44283333333334,
+          33.42883333333333
+        ]
+      },
+      "properties": {
+        "name": "Empire Landing",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.43531666666667,
+          33.430366666666664
+        ]
+      },
+      "properties": {
+        "name": "Red Bluff",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.41005,
+          33.423183333333334
+        ]
+      },
+      "properties": {
+        "name": "Little Gibraltar Main Big Rock",
+        "notes": "Stay W of MPA at 118 24.000",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3655,
+          33.405833333333334
+        ]
+      },
+      "properties": {
+        "name": "Long Point",
+        "notes": "Stay E/S of MPA",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.36625,
+          33.399683333333336
+        ]
+      },
+      "properties": {
+        "name": "Hen Rock Kelp",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.35285,
+          33.375733333333336
+        ]
+      },
+      "properties": {
+        "name": "Toyon Bay",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.34033333333333,
+          33.36545
+        ]
+      },
+      "properties": {
+        "name": "Gallaghers",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30693333333333,
+          33.33031666666667
+        ]
+      },
+      "properties": {
+        "name": "Can Dump Kelp",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30383333333333,
+          33.322
+        ]
+      },
+      "properties": {
+        "name": "East End Quarry",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30281666666667,
+          33.32041666666667
+        ]
+      },
+      "properties": {
+        "name": "Jewfish Point",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.303,
+          33.31333333333333
+        ]
+      },
+      "properties": {
+        "name": "The Slide",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Island - Front Side (W to E)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.61933333333333,
+          33.46666666666667
+        ]
+      },
+      "properties": {
+        "name": "West End Humps 1",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Rockfish Spots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.6195,
+          33.464666666666666
+        ]
+      },
+      "properties": {
+        "name": "West End Humps 2",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Rockfish Spots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.61383333333333,
+          33.464
+        ]
+      },
+      "properties": {
+        "name": "West End Humps 3",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Rockfish Spots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40116666666667,
+          33.296
+        ]
+      },
+      "properties": {
+        "name": "Salta Verde Cod 1 (48fa)",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Rockfish Spots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.39583333333333,
+          33.29716666666667
+        ]
+      },
+      "properties": {
+        "name": "Salta Verde Cod 2 (43fa)",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Rockfish Spots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.39683333333333,
+          33.3
+        ]
+      },
+      "properties": {
+        "name": "Salta Verde Cod 3 (43fa)",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Rockfish Spots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3995,
+          33.29966666666667
+        ]
+      },
+      "properties": {
+        "name": "Salta Verde Cod 4 (47fa)",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Rockfish Spots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.401,
+          33.297666666666665
+        ]
+      },
+      "properties": {
+        "name": "Salta Verde Cod 5 (45fa)",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Rockfish Spots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40185,
+          33.296166666666664
+        ]
+      },
+      "properties": {
+        "name": "Salta Verde Cod 6 (48fa)",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Rockfish Spots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4105,
+          33.30233333333334
+        ]
+      },
+      "properties": {
+        "name": "Salta Verde Cod 7 (40fa)",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Rockfish Spots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.42016666666666,
+          33.303
+        ]
+      },
+      "properties": {
+        "name": "Salta Verde Cod 8 (43fa)",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Rockfish Spots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.415,
+          33.311
+        ]
+      },
+      "properties": {
+        "name": "Salta Verde Cod Pinnacle",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Rockfish Spots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.38266666666667,
+          33.30266666666667
+        ]
+      },
+      "properties": {
+        "name": "3rd V Cod 1 (36fa)",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Rockfish Spots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.36966666666666,
+          33.29366666666667
+        ]
+      },
+      "properties": {
+        "name": "3rd V Cod 2 (31fa)",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Rockfish Spots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30533333333334,
+          33.2865
+        ]
+      },
+      "properties": {
+        "name": "East End Rockfish 1 (46fa)",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Rockfish Spots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30566666666667,
+          33.287333333333336
+        ]
+      },
+      "properties": {
+        "name": "East End Rockfish 2 (48fa)",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Rockfish Spots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.307,
+          33.287
+        ]
+      },
+      "properties": {
+        "name": "East End Rockfish 3 (47fa)",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "Catalina Rockfish Spots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5875,
+          33.03333333333333
+        ]
+      },
+      "properties": {
+        "name": "Northwest Harbor",
+        "notes": "Naval Security Zone",
+        "section": "8. So Cal Islands",
+        "subsection": "San Clemente Island - Front Side (N to S)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.43933333333334,
+          32.891866666666665
+        ]
+      },
+      "properties": {
+        "name": "White Rock",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Clemente Island - Front Side (N to S)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.41285,
+          32.87153333333333
+        ]
+      },
+      "properties": {
+        "name": "Purse Seine Rock",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Clemente Island - Front Side (N to S)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.35416666666667,
+          32.815333333333335
+        ]
+      },
+      "properties": {
+        "name": "Pyramid Head",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Clemente Island - Front Side (N to S)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.35833333333333,
+          32.81666666666667
+        ]
+      },
+      "properties": {
+        "name": "Pyramid Reef",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Clemente Island - Front Side (N to S)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.38333333333334,
+          32.81666666666667
+        ]
+      },
+      "properties": {
+        "name": "Pyramid Cove",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Clemente Island - Front Side (N to S)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.62633333333333,
+          33.04416666666667
+        ]
+      },
+      "properties": {
+        "name": "9 Fathom Spot",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Clemente Island - Back Side (N to S)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.61483333333334,
+          33.035
+        ]
+      },
+      "properties": {
+        "name": "Castle Rock",
+        "notes": "Naval Security Zone",
+        "section": "8. So Cal Islands",
+        "subsection": "San Clemente Island - Back Side (N to S)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5945,
+          33.00833333333333
+        ]
+      },
+      "properties": {
+        "name": "West Cove",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Clemente Island - Back Side (N to S)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5895,
+          32.991
+        ]
+      },
+      "properties": {
+        "name": "The Dunes",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Clemente Island - Back Side (N to S)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.55683333333333,
+          32.9195
+        ]
+      },
+      "properties": {
+        "name": "Eel Point",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Clemente Island - Back Side (N to S)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5355,
+          32.9035
+        ]
+      },
+      "properties": {
+        "name": "Seal Cove",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Clemente Island - Back Side (N to S)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5215,
+          32.879333333333335
+        ]
+      },
+      "properties": {
+        "name": "Mail Point",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Clemente Island - Back Side (N to S)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5035,
+          32.851
+        ]
+      },
+      "properties": {
+        "name": "Lost Point",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Clemente Island - Back Side (N to S)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.43333333333334,
+          32.795833333333334
+        ]
+      },
+      "properties": {
+        "name": "China Point",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Clemente Island - Back Side (N to S)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40283333333333,
+          32.8075
+        ]
+      },
+      "properties": {
+        "name": "The Caves",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Clemente Island - Back Side (N to S)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40833333333333,
+          32.766666666666666
+        ]
+      },
+      "properties": {
+        "name": "29 Fathom Spot",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Clemente Island - Back Side (N to S)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40866666666666,
+          32.75866666666667
+        ]
+      },
+      "properties": {
+        "name": "Desperation Reef",
+        "notes": "",
+        "section": "8. So Cal Islands",
+        "subsection": "San Clemente Island - Back Side (N to S)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.06666666666666,
+          34.36666666666667
+        ]
+      },
+      "properties": {
+        "name": "Arguello Canyon",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.68361666666667,
+          34.21666666666667
+        ]
+      },
+      "properties": {
+        "name": "12 Mile Reef",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.92,
+          34.12
+        ]
+      },
+      "properties": {
+        "name": "Davis Knoll",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.05,
+          34.04666666666667
+        ]
+      },
+      "properties": {
+        "name": "Rodriguez Seamount",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.0,
+          33.943333333333335
+        ]
+      },
+      "properties": {
+        "name": "San Miguel Gap",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.53333333333333,
+          33.791666666666664
+        ]
+      },
+      "properties": {
+        "name": "307",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.70555,
+          33.73055
+        ]
+      },
+      "properties": {
+        "name": "The Boot (504)",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.26666666666667,
+          33.73
+        ]
+      },
+      "properties": {
+        "name": "170",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.16221666666667,
+          33.73
+        ]
+      },
+      "properties": {
+        "name": "Hidden Reef",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.575,
+          33.68333333333333
+        ]
+      },
+      "properties": {
+        "name": "270",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.26666666666667,
+          33.61666666666667
+        ]
+      },
+      "properties": {
+        "name": "311 (Trask Knoll)",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.95195,
+          33.61416666666667
+        ]
+      },
+      "properties": {
+        "name": "175",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.6,
+          33.575
+        ]
+      },
+      "properties": {
+        "name": "286",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.01416666666667,
+          33.57445
+        ]
+      },
+      "properties": {
+        "name": "Kidney Bank (63)",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.84166666666667,
+          33.50333333333333
+        ]
+      },
+      "properties": {
+        "name": "172",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.5,
+          33.5
+        ]
+      },
+      "properties": {
+        "name": "Patton Ridge",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.70833333333333,
+          33.483333333333334
+        ]
+      },
+      "properties": {
+        "name": "125",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.225,
+          33.41166666666667
+        ]
+      },
+      "properties": {
+        "name": "Avalon Bank",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0,
+          33.397216666666665
+        ]
+      },
+      "properties": {
+        "name": "14 Mile Bank",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.04166666666667,
+          33.36
+        ]
+      },
+      "properties": {
+        "name": "Osborn Bank",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.81916666666666,
+          33.29666666666667
+        ]
+      },
+      "properties": {
+        "name": "279 / 267",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24445,
+          33.28333333333333
+        ]
+      },
+      "properties": {
+        "name": "The Slide",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.74166666666666,
+          33.275
+        ]
+      },
+      "properties": {
+        "name": "499",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.82666666666667,
+          33.25
+        ]
+      },
+      "properties": {
+        "name": "Potato Bank",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.18055,
+          33.24666666666667
+        ]
+      },
+      "properties": {
+        "name": "152",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.08,
+          33.2
+        ]
+      },
+      "properties": {
+        "name": "277",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.91666666666667,
+          33.15833333333333
+        ]
+      },
+      "properties": {
+        "name": "474",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.05,
+          33.13333333333333
+        ]
+      },
+      "properties": {
+        "name": "711",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.36666666666666,
+          33.13333333333333
+        ]
+      },
+      "properties": {
+        "name": "Sverdrup Bank (126)",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.8725,
+          33.09583333333333
+        ]
+      },
+      "properties": {
+        "name": "209",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.97666666666667,
+          33.06333333333333
+        ]
+      },
+      "properties": {
+        "name": "San Juan Seamount",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.39333333333333,
+          33.03666666666667
+        ]
+      },
+      "properties": {
+        "name": "Mackerel Bank",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.80833333333334,
+          33.02361666666667
+        ]
+      },
+      "properties": {
+        "name": "312",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.94721666666666,
+          32.96666666666667
+        ]
+      },
+      "properties": {
+        "name": "Albatross Knoll",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.095,
+          32.93333333333333
+        ]
+      },
+      "properties": {
+        "name": "289",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.08333333333333,
+          32.90833333333333
+        ]
+      },
+      "properties": {
+        "name": "284",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.88333333333334,
+          32.9
+        ]
+      },
+      "properties": {
+        "name": "181",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.31333333333333,
+          32.9
+        ]
+      },
+      "properties": {
+        "name": "La Jolla Canyon",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.41333333333333,
+          32.86666666666667
+        ]
+      },
+      "properties": {
+        "name": "Cherry Banks",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.825,
+          32.825
+        ]
+      },
+      "properties": {
+        "name": "51",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.82221666666666,
+          32.8125
+        ]
+      },
+      "properties": {
+        "name": "138",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40611666666666,
+          32.71945
+        ]
+      },
+      "properties": {
+        "name": "81",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.78611666666667,
+          32.71945
+        ]
+      },
+      "properties": {
+        "name": "140",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.48861666666667,
+          32.7
+        ]
+      },
+      "properties": {
+        "name": "178",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.13333333333334,
+          32.7
+        ]
+      },
+      "properties": {
+        "name": "Tanner Bank",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.70666666666666,
+          32.68833333333333
+        ]
+      },
+      "properties": {
+        "name": "182",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.60833333333333,
+          32.68333333333333
+        ]
+      },
+      "properties": {
+        "name": "381",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.97361666666667,
+          32.65555
+        ]
+      },
+      "properties": {
+        "name": "43",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.72833333333334,
+          32.65
+        ]
+      },
+      "properties": {
+        "name": "166",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.43333333333334,
+          32.63333333333333
+        ]
+      },
+      "properties": {
+        "name": "North 9 Mile Bank",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.82333333333334,
+          32.626666666666665
+        ]
+      },
+      "properties": {
+        "name": "The Corner",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.93916666666667,
+          32.61333333333333
+        ]
+      },
+      "properties": {
+        "name": "91",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.00833333333334,
+          32.59583333333333
+        ]
+      },
+      "properties": {
+        "name": "300",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.69945,
+          32.568333333333335
+        ]
+      },
+      "properties": {
+        "name": "Hancock Bank",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.35,
+          32.53333333333333
+        ]
+      },
+      "properties": {
+        "name": "South 9 Mile Bank",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.68333333333334,
+          32.5
+        ]
+      },
+      "properties": {
+        "name": "267 (The Condom)",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.63333333333334,
+          32.49445
+        ]
+      },
+      "properties": {
+        "name": "226",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.4,
+          32.49166666666667
+        ]
+      },
+      "properties": {
+        "name": "439",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.13055,
+          32.44028333333333
+        ]
+      },
+      "properties": {
+        "name": "Cortes Bank",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.57916666666667,
+          32.43888333333334
+        ]
+      },
+      "properties": {
+        "name": "302 (Kidney Bank)",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.46666666666667,
+          32.375
+        ]
+      },
+      "properties": {
+        "name": "157",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29721666666667,
+          32.36666666666667
+        ]
+      },
+      "properties": {
+        "name": "W. Butterfly",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.70695,
+          32.35695
+        ]
+      },
+      "properties": {
+        "name": "230",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.64,
+          32.346666666666664
+        ]
+      },
+      "properties": {
+        "name": "Northeast Bank",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9,
+          32.31666666666667
+        ]
+      },
+      "properties": {
+        "name": "San Salvador Knoll",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1,
+          32.27361666666667
+        ]
+      },
+      "properties": {
+        "name": "E. Butterfly",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.54666666666667,
+          32.27
+        ]
+      },
+      "properties": {
+        "name": "371",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.25,
+          32.25
+        ]
+      },
+      "properties": {
+        "name": "101",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.38666666666667,
+          32.25
+        ]
+      },
+      "properties": {
+        "name": "425",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.86666666666666,
+          32.13333333333333
+        ]
+      },
+      "properties": {
+        "name": "421",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.07333333333334,
+          32.11333333333334
+        ]
+      },
+      "properties": {
+        "name": "Upper Finger Bank",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.81333333333333,
+          32.083333333333336
+        ]
+      },
+      "properties": {
+        "name": "390",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.11666666666666,
+          32.06666666666667
+        ]
+      },
+      "properties": {
+        "name": "475 Knuckle",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24721666666667,
+          32.06666666666667
+        ]
+      },
+      "properties": {
+        "name": "60 Mile Bank (53 Fa.)",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5,
+          32.06666666666667
+        ]
+      },
+      "properties": {
+        "name": "Mushroom",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.46666666666667,
+          32.05
+        ]
+      },
+      "properties": {
+        "name": "Upper Hidden Bank",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0,
+          32.0
+        ]
+      },
+      "properties": {
+        "name": "Upper Cross",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.86361666666667,
+          31.96
+        ]
+      },
+      "properties": {
+        "name": "97",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.98333333333333,
+          31.95
+        ]
+      },
+      "properties": {
+        "name": "The Worm",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.83333333333333,
+          31.9
+        ]
+      },
+      "properties": {
+        "name": "378",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.5,
+          31.9
+        ]
+      },
+      "properties": {
+        "name": "Hidden Bank",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.46666666666667,
+          31.866666666666667
+        ]
+      },
+      "properties": {
+        "name": "Elephant",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.11666666666666,
+          31.833333333333332
+        ]
+      },
+      "properties": {
+        "name": "The Airplane",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.86333333333333,
+          31.803333333333335
+        ]
+      },
+      "properties": {
+        "name": "213",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.79,
+          31.8
+        ]
+      },
+      "properties": {
+        "name": "Todos Santos Island",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.5,
+          31.766666666666666
+        ]
+      },
+      "properties": {
+        "name": "Upper 500",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.73333333333333,
+          31.763883333333332
+        ]
+      },
+      "properties": {
+        "name": "1010 Trench",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.06666666666666,
+          31.75
+        ]
+      },
+      "properties": {
+        "name": "The Pistol",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3,
+          31.7
+        ]
+      },
+      "properties": {
+        "name": "480",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.55,
+          31.7
+        ]
+      },
+      "properties": {
+        "name": "Dumping Grounds",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.86666666666666,
+          31.65
+        ]
+      },
+      "properties": {
+        "name": "Banda Bank",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.88333333333334,
+          31.616666666666667
+        ]
+      },
+      "properties": {
+        "name": "1067 Knuckle",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.25,
+          31.61
+        ]
+      },
+      "properties": {
+        "name": "385",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.93,
+          31.605
+        ]
+      },
+      "properties": {
+        "name": "Bell Bank (300)",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.43333333333334,
+          31.6
+        ]
+      },
+      "properties": {
+        "name": "295",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.08333333333333,
+          31.6
+        ]
+      },
+      "properties": {
+        "name": "475",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.65,
+          31.583333333333332
+        ]
+      },
+      "properties": {
+        "name": "Double 220",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.48333333333333,
+          31.566666666666666
+        ]
+      },
+      "properties": {
+        "name": "270",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.18333333333334,
+          31.55
+        ]
+      },
+      "properties": {
+        "name": "238",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2,
+          31.533333333333335
+        ]
+      },
+      "properties": {
+        "name": "437",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.06666666666666,
+          31.466666666666665
+        ]
+      },
+      "properties": {
+        "name": "483/500",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.0875,
+          31.453333333333333
+        ]
+      },
+      "properties": {
+        "name": "450",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.76166666666667,
+          31.397216666666665
+        ]
+      },
+      "properties": {
+        "name": "60",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.53805,
+          31.378616666666666
+        ]
+      },
+      "properties": {
+        "name": "372",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.75,
+          31.333333333333332
+        ]
+      },
+      "properties": {
+        "name": "Peanut Bank",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.34583333333333,
+          31.312216666666668
+        ]
+      },
+      "properties": {
+        "name": "250",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.18333333333334,
+          31.3
+        ]
+      },
+      "properties": {
+        "name": "1140 Finger",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.475,
+          31.281666666666666
+        ]
+      },
+      "properties": {
+        "name": "245",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.84666666666666,
+          31.28
+        ]
+      },
+      "properties": {
+        "name": "230",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0125,
+          31.227216666666667
+        ]
+      },
+      "properties": {
+        "name": "400",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.04166666666667,
+          31.175
+        ]
+      },
+      "properties": {
+        "name": "Lower 500",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.47166666666666,
+          31.163333333333334
+        ]
+      },
+      "properties": {
+        "name": "400",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.57083333333334,
+          31.113616666666665
+        ]
+      },
+      "properties": {
+        "name": "52",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.41528333333333,
+          31.09945
+        ]
+      },
+      "properties": {
+        "name": "Sniffer",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.61666666666666,
+          31.05
+        ]
+      },
+      "properties": {
+        "name": "300 (The Rampart)",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0,
+          31.0
+        ]
+      },
+      "properties": {
+        "name": "Lower Cross",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.66666666666667,
+          30.966666666666665
+        ]
+      },
+      "properties": {
+        "name": "Catchers Mitt",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.175,
+          30.816666666666666
+        ]
+      },
+      "properties": {
+        "name": "950",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.57833333333333,
+          30.75
+        ]
+      },
+      "properties": {
+        "name": "330",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.21666666666667,
+          30.616666666666667
+        ]
+      },
+      "properties": {
+        "name": "The Bumps",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.4,
+          30.55
+        ]
+      },
+      "properties": {
+        "name": "179",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.38666666666667,
+          30.505833333333335
+        ]
+      },
+      "properties": {
+        "name": "220",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.28333333333333,
+          30.3
+        ]
+      },
+      "properties": {
+        "name": "304",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.58333333333333,
+          30.2
+        ]
+      },
+      "properties": {
+        "name": "380",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.48333333333333,
+          30.183333333333334
+        ]
+      },
+      "properties": {
+        "name": "Tuna Hole (179)",
+        "notes": "",
+        "section": "9. Offshore Banks (North to South)",
+        "subsection": ""
+      }
+    }
+  ]
+}

@@ -144,6 +144,15 @@ select { background:#2d3748; border:1px solid #4a5568; color:#e2e8f0;
 .qbar { display:flex; gap:2px; margin-top:3px; }
 .qsw { flex:1; height:7px; border-radius:2px; }
 
+/* ── Spot tooltips ───────────────────────────────────────── */
+.spot-tip {
+  background:#1a1f2e !important; border:1px solid #d946ef !important;
+  color:#f0abfc !important; font-size:11px; font-weight:600;
+  padding:2px 7px; border-radius:4px; box-shadow:0 2px 8px #0006;
+  white-space:nowrap;
+}
+.spot-tip.leaflet-tooltip-top::before { border-top-color:#d946ef !important; }
+
 /* ── Cluster overrides ───────────────────────────────────── */
 .marker-cluster div { font-weight:700; font-size:11px; }
 
@@ -170,6 +179,7 @@ select { background:#2d3748; border:1px solid #4a5568; color:#e2e8f0;
     <button class="lbtn on" id="btn-hotspots"    onclick="toggleLayer('hotspots')">Hotspots</button>
     <button class="lbtn on" id="btn-tracks"      onclick="toggleLayer('tracks')">Tracks</button>
     <button class="lbtn"    id="btn-waypoints"   onclick="toggleLayer('waypoints')">Waypoints</button>
+    <button class="lbtn"    id="btn-spots"       onclick="toggleLayer('spots')">Spots</button>
     <button class="lbtn"    id="btn-observations"onclick="toggleLayer('observations')">Observations</button>
   </div>
 
@@ -254,6 +264,7 @@ select { background:#2d3748; border:1px solid #4a5568; color:#e2e8f0;
     <div class="lrow"><div class="lsw" style="background:#3b82f6;border-radius:50%"></div>Hotspot (size=days)</div>
     <div class="lrow"><div style="width:12px;height:2px;background:#f59e0b"></div>Migration track</div>
     <div class="lrow"><div class="lsw" style="background:#10b981;border-radius:50%"></div>GPS waypoint</div>
+    <div class="lrow"><div class="lsw" style="background:#d946ef;border-radius:50%"></div>Spot (named GPS)</div>
     <div class="lrow"><div class="lsw" style="background:#94a3b8;border-radius:50%"></div>Observation</div>
   </div>
 </div>
@@ -293,8 +304,8 @@ function switchBasemap(k){map.removeLayer(baseTile);baseTile=L.tileLayer(TILES[k
 // State
 // ─────────────────────────────────────────────────────────────────────────────
 let geoData   = {};
-let layerVis  = {hotspots:true, tracks:true, waypoints:false, observations:false};
-let layers    = {hotspots:null, tracks:null, waypoints:null, observations:null};
+let layerVis  = {hotspots:true, tracks:true, waypoints:false, spots:false, observations:false};
+let layers    = {hotspots:null, tracks:null, waypoints:null, spots:null, observations:null};
 let activeSpecies = new Set(Object.keys(SP_COLOR));
 
 // Timeline
@@ -323,6 +334,7 @@ async function init(){
     setText('Loading hotspots…');      geoData.hotspots     = await loadJSON('species_hotspots.geojson');
     setText('Loading tracks…');        geoData.tracks       = await loadJSON('migration_tracks.geojson');
     setText('Loading waypoints…');     geoData.waypoints    = await loadJSON('gps_waypoints.geojson');
+    setText('Loading spots…');         geoData.spots        = await loadJSON('spots.geojson');
     setText('Loading observations…');
     try { geoData.observations = await loadJSON('daily_observations.geojson'); }
     catch{ geoData.observations = {type:'FeatureCollection',features:[]}; }
@@ -447,7 +459,8 @@ function stepTime(delta, fromTimer=false){
   updateDateLabel();
   highlightStrip();
   if(layerVis.observations) renderObservations();
-  if(layerVis.tracks) renderTracks();
+  if(layerVis.tracks)       renderTracks();
+  if(layerVis.waypoints)    renderWaypoints();
 }
 
 function scrubTo(i){
@@ -456,7 +469,8 @@ function scrubTo(i){
   updateDateLabel();
   highlightStrip();
   if(layerVis.observations) renderObservations();
-  if(layerVis.tracks) renderTracks();
+  if(layerVis.tracks)       renderTracks();
+  if(layerVis.waypoints)    renderWaypoints();
 }
 
 function setGranularity(g){
@@ -492,6 +506,7 @@ function toggleLayer(name){
   else if(name==='tracks')  renderTracks();
   else if(name==='hotspots') renderHotspots();
   else if(name==='waypoints') renderWaypoints();
+  else if(name==='spots')    renderSpots();
 }
 
 function clearL(name){ if(layers[name]){map.removeLayer(layers[name]);layers[name]=null;} }
@@ -502,6 +517,7 @@ function clearL(name){ if(layers[name]){map.removeLayer(layers[name]);layers[nam
 function renderStatic(){
   renderHotspots();
   renderWaypoints();
+  renderSpots();
   renderTracks();
   renderObservations();
 }
@@ -533,16 +549,67 @@ function renderHotspots(){
 function renderWaypoints(){
   clearL('waypoints');
   if(!layerVis.waypoints||!geoData.waypoints) return;
-  const g=L.layerGroup();
+
+  const hasPeriod = tl.periods.length > 0;
+  const currentPeriod = hasPeriod ? tl.periods[tl.index] : null;
+
+  const g = L.layerGroup();
   for(const f of geoData.waypoints.features){
-    const p=f.properties;
+    const p = f.properties;
     if(!p.name) continue;
-    const [lon,lat]=f.geometry.coordinates;
-    L.circleMarker([lat,lon],{radius:3,color:'#10b981',fillColor:'#10b981',fillOpacity:.6,weight:1})
+
+    // Date-filter when timeline is active
+    if(currentPeriod){
+      const k = periodKey(p.report_date, tl.granularity);
+      // Show waypoints within the current trail window
+      if(!k) continue;
+      const idx = tl.periods.indexOf(k);
+      if(idx < 0 || idx > tl.index || idx < tl.index - tl.trail) continue;
+    }
+
+    const [lon,lat] = f.geometry.coordinates;
+    const age = currentPeriod ? Math.max(0, tl.index - tl.periods.indexOf(periodKey(p.report_date, tl.granularity))) : 0;
+    const op  = TRAIL_OPACITY[Math.min(age, TRAIL_OPACITY.length-1)];
+
+    L.circleMarker([lat,lon],{
+      radius:3, color:'#10b981', fillColor:'#10b981',
+      fillOpacity: currentPeriod ? op * 0.8 : 0.6, weight:1,
+    })
+     .bindTooltip(p.name, {permanent:false, direction:'top', offset:[0,-4], className:'spot-tip'})
      .bindPopup(`<b>${p.name}</b><br>Zone: ${p.zone}<br>${p.report_date}`)
      .addTo(g);
   }
-  layers.waypoints=g.addTo(map);
+  layers.waypoints = g.addTo(map);
+}
+
+function renderSpots(){
+  clearL('spots');
+  if(!layerVis.spots||!geoData.spots) return;
+  const g = L.layerGroup();
+  for(const f of geoData.spots.features){
+    const p = f.properties;
+    const [lon,lat] = f.geometry.coordinates;
+
+    const marker = L.circleMarker([lat,lon],{
+      radius:5, color:'#f0abfc', fillColor:'#d946ef',
+      fillOpacity:0.85, weight:1.5,
+    });
+
+    // Permanent tooltip (always visible label on hover)
+    marker.bindTooltip(p.name, {
+      permanent:false, direction:'top', offset:[0,-6],
+      className:'spot-tip',
+    });
+
+    marker.bindPopup(
+      `<b>${p.name}</b><br>`+
+      (p.notes ? `<i>${p.notes}</i><br>` : '')+
+      `<span style="font-size:11px;color:#94a3b8">${p.subsection || p.section}</span><br>`+
+      `<span style="font-size:10px;color:#64748b">${lat.toFixed(4)}, ${lon.toFixed(4)}</span>`
+    );
+    g.addLayer(marker);
+  }
+  layers.spots = g.addTo(map);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
